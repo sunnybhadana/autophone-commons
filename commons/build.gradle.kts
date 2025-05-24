@@ -8,7 +8,7 @@ plugins {
     `maven-publish`
 }
 
-group = "com.goodwy"
+group = "com.revaltronics"
 version = "6.1.1"
 
 android {

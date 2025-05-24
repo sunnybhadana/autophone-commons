@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<revaltronics.commons.views.PatternTab xmlns:android="http://schemas.android.com/apk/res/android"
+<com.revaltronics.commons.views.PatternTab xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/pattern_lock_holder"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <revaltronics.commons.views.MyTextView
+    <com.revaltronics.commons.views.MyTextView
         android:id="@+id/pattern_lock_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,4 +37,4 @@
         app:layout_constraintTop_toBottomOf="@+id/pattern_lock_title"
         app:layout_constraintWidth_max="@dimen/app_lock_view_max_size" />
 
-</revaltronics.commons.views.PatternTab>
+</com.revaltronics.commons.views.PatternTab>

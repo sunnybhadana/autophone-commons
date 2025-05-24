@@ -8,6 +8,8 @@ plugins {
     alias(libs.plugins.detekt)
 }
 
+group = "com.revaltronics.commons"
+
 val keystorePropertiesFile: File = rootProject.file("keystore.properties")
 val keystoreProperties = Properties()
 if (keystorePropertiesFile.exists()) {
@@ -30,7 +32,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.goodwy.commons.samples"
+        applicationId = "com.revaltronics.commons.samples"
         minSdk = libs.versions.app.build.minimumSDK.get().toInt()
         targetSdk = libs.versions.app.build.targetSDK.get().toInt()
         versionCode = 630

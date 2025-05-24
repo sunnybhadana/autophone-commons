@@ -12,7 +12,7 @@
         android:paddingTop="@dimen/activity_margin"
         android:paddingRight="@dimen/activity_margin">
 
-        <revaltronics.commons.views.MyTextInputLayout
+        <com.revaltronics.commons.views.MyTextInputLayout
             android:id="@+id/dialog_custom_interval_hint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
                 android:textCursorDrawable="@null"
                 android:textSize="@dimen/bigger_text_size" />
 
-        </revaltronics.commons.views.MyTextInputLayout>
+        </com.revaltronics.commons.views.MyTextInputLayout>
 
         <RadioGroup
             android:id="@+id/dialog_radio_view"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/activity_margin">
 
-            <revaltronics.commons.views.MyCompatRadioButton
+            <com.revaltronics.commons.views.MyCompatRadioButton
                 android:id="@+id/dialog_radio_seconds"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
                 android:paddingBottom="@dimen/activity_margin"
                 android:text="@string/seconds_raw" />
 
-            <revaltronics.commons.views.MyCompatRadioButton
+            <com.revaltronics.commons.views.MyCompatRadioButton
                 android:id="@+id/dialog_radio_minutes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
                 android:paddingBottom="@dimen/activity_margin"
                 android:text="@string/minutes_raw" />
 
-            <revaltronics.commons.views.MyCompatRadioButton
+            <com.revaltronics.commons.views.MyCompatRadioButton
                 android:id="@+id/dialog_radio_hours"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                 android:paddingBottom="@dimen/activity_margin"
                 android:text="@string/hours_raw" />
 
-            <revaltronics.commons.views.MyCompatRadioButton
+            <com.revaltronics.commons.views.MyCompatRadioButton
                 android:id="@+id/dialog_radio_days"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

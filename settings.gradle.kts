@@ -14,6 +14,6 @@ dependencyResolutionManagement {
         maven { setUrl("https://artifactory-external.vkpartner.ru/artifactory/maven") }
     }
 }
-rootProject.name = "Goodwy-Commons"
+rootProject.name = "Revaltronics-Commons"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":commons", ":samples", ":strings")

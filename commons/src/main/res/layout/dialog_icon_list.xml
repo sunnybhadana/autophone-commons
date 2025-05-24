@@ -79,7 +79,7 @@
             android:layout_toEndOf="@+id/icon2Holder"
             android:orientation="vertical">
 
-            <revaltronics.commons.views.MySquareImageView
+            <com.revaltronics.commons.views.MySquareImageView
                 android:id="@+id/icon3"
                 android:layout_width="@dimen/fingerprint_size"
                 android:layout_height="@dimen/fingerprint_size"
@@ -359,7 +359,7 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <revaltronics.commons.views.MyTextView
+    <com.revaltronics.commons.views.MyTextView
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

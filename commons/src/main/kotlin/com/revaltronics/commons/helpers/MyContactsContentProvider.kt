@@ -15,7 +15,7 @@ import com.revaltronics.commons.extensions.getStringValueOrNull
 // used for sharing privately stored contacts in Simple Contacts with Simple Dialer, Simple SMS Messenger and Simple Calendar Pro
 class MyContactsContentProvider {
     companion object {
-        private const val AUTHORITY = "com.goodwy.commons.contactsprovider"
+        private const val AUTHORITY = "com.revaltronics.commons.contactsprovider"
         val CONTACTS_CONTENT_URI = "content://$AUTHORITY/contacts".toUri()
 
         const val FAVORITES_ONLY = "favorites_only"

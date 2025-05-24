@@ -18,7 +18,7 @@
         android:layout_marginTop="@dimen/normal_margin"
         android:layout_centerHorizontal="true">
 
-        <revaltronics.commons.views.MyTextView
+        <com.revaltronics.commons.views.MyTextView
             android:id="@+id/grid_color_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,60 +67,60 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <revaltronics.commons.views.LineColorPickerGrid
+            <com.revaltronics.commons.views.LineColorPickerGrid
                 android:id="@+id/primary_line_color_picker"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/grid_color_picker_height"/>
 
-            <revaltronics.commons.views.LineColorPickerGrid
+            <com.revaltronics.commons.views.LineColorPickerGrid
                 android:id="@+id/line_50_color_picker"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/grid_color_picker_height"
                 android:layout_below="@+id/primary_line_color_picker"/>
 
-            <revaltronics.commons.views.LineColorPickerGrid
+            <com.revaltronics.commons.views.LineColorPickerGrid
                 android:id="@+id/line_100_color_picker"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/grid_color_picker_height"
                 android:layout_below="@+id/line_50_color_picker"/>
 
-            <revaltronics.commons.views.LineColorPickerGrid
+            <com.revaltronics.commons.views.LineColorPickerGrid
                 android:id="@+id/line_200_color_picker"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/grid_color_picker_height"
                 android:layout_below="@+id/line_100_color_picker"/>
 
-            <revaltronics.commons.views.LineColorPickerGrid
+            <com.revaltronics.commons.views.LineColorPickerGrid
                 android:id="@+id/line_300_color_picker"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/grid_color_picker_height"
                 android:layout_below="@+id/line_200_color_picker" />
 
-            <revaltronics.commons.views.LineColorPickerGrid
+            <com.revaltronics.commons.views.LineColorPickerGrid
                 android:id="@+id/line_400_color_picker"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/grid_color_picker_height"
                 android:layout_below="@+id/line_300_color_picker"/>
 
-            <revaltronics.commons.views.LineColorPickerGrid
+            <com.revaltronics.commons.views.LineColorPickerGrid
                 android:id="@+id/line_500_color_picker"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/grid_color_picker_height"
                 android:layout_below="@+id/line_400_color_picker"/>
 
-            <revaltronics.commons.views.LineColorPickerGrid
+            <com.revaltronics.commons.views.LineColorPickerGrid
                 android:id="@+id/line_600_color_picker"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/grid_color_picker_height"
                 android:layout_below="@+id/line_500_color_picker"/>
 
-            <revaltronics.commons.views.LineColorPickerGrid
+            <com.revaltronics.commons.views.LineColorPickerGrid
                 android:id="@+id/line_700_color_picker"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/grid_color_picker_height"
                 android:layout_below="@+id/line_600_color_picker"/>
 
-            <revaltronics.commons.views.LineColorPickerGrid
+            <com.revaltronics.commons.views.LineColorPickerGrid
                 android:id="@+id/line_800_color_picker"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/grid_color_picker_height"
@@ -130,7 +130,7 @@
 
     </androidx.cardview.widget.CardView>
 
-    <revaltronics.commons.views.LineColorPickerGrid
+    <com.revaltronics.commons.views.LineColorPickerGrid
         android:id="@+id/secondary_line_color_picker"
         android:layout_width="match_parent"
         android:layout_height="@dimen/grid_color_picker_height"
@@ -165,7 +165,7 @@
                 android:layout_centerVertical="true" />
         </androidx.cardview.widget.CardView>
 
-        <revaltronics.commons.views.MyTextView
+        <com.revaltronics.commons.views.MyTextView
             android:id="@+id/grid_color_hex_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -175,7 +175,7 @@
             android:text="@string/hex"
             android:textSize="@dimen/bigger_text_size" />
 
-        <revaltronics.commons.views.MyTextView
+        <com.revaltronics.commons.views.MyTextView
             android:id="@+id/grid_color_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -187,7 +187,7 @@
             android:text="@string/color"
             android:textSize="@dimen/bigger_text_size" />
 
-        <revaltronics.commons.views.MyTextView
+        <com.revaltronics.commons.views.MyTextView
             android:id="@+id/hex_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

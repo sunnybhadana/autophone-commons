@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <revaltronics.commons.views.MyCompatRadioButton
+    <com.revaltronics.commons.views.MyCompatRadioButton
         android:id="@+id/dialogRadioButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

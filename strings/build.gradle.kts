@@ -4,6 +4,9 @@ plugins {
     `maven-publish`
 }
 
+group = "com.revaltronics.commons"
+version = "6.1.1"
+
 android {
     namespace = "com.revaltronics.strings"
     compileSdk = libs.versions.app.build.compileSDKVersion.get().toInt()
