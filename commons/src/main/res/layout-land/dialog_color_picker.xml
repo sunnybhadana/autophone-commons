@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.goodwy.commons.views.MyTextView
+        <revaltronics.commons.views.MyTextView
             android:id="@+id/color_picker_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
                 app:cardCornerRadius="8dp"
                 app:cardElevation="16dp">
 
-                <com.goodwy.commons.views.ColorPickerSquare
+                <revaltronics.commons.views.ColorPickerSquare
                     android:id="@+id/color_picker_square"
                     android:layout_width="@dimen/colorpicker_size_small"
                     android:layout_height="@dimen/colorpicker_size_small"
@@ -118,7 +118,7 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <com.goodwy.commons.views.MyTextView
+                <revaltronics.commons.views.MyTextView
                     android:id="@+id/color_picker_old_hex"
                     android:layout_width="@dimen/colorpicker_color_width"
                     android:layout_height="match_parent"
@@ -141,7 +141,7 @@
                     android:src="@drawable/ic_arrow_right_vector"
                     android:visibility="invisible" />
 
-                <com.goodwy.commons.views.MyTextView
+                <revaltronics.commons.views.MyTextView
                     android:id="@+id/color_picker_new_hex_label"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/colorpicker_items_height"
@@ -154,7 +154,7 @@
                     android:text="@string/hex"
                     android:textSize="@dimen/normal_text_size" />
 
-                <com.goodwy.commons.views.MyTextView
+                <revaltronics.commons.views.MyTextView
                     android:id="@+id/color_picker_new_color_label"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/colorpicker_items_height"
@@ -168,7 +168,7 @@
                     android:text="@string/color"
                     android:textSize="@dimen/normal_text_size" />
 
-                <com.goodwy.commons.views.MyEditText
+                <revaltronics.commons.views.MyEditText
                     android:id="@+id/color_picker_new_hex"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

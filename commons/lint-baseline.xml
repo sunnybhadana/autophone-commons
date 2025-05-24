@@ -548,7 +548,7 @@
 
     <issue
         id="RestrictedApi"
-        message="AnimationUtils.LINEAR_OUT_SLOW_IN_INTERPOLATOR can only be accessed from within the same library group (referenced groupId=`com.google.android.material` from groupId=`com.goodwy`)"
+        message="AnimationUtils.LINEAR_OUT_SLOW_IN_INTERPOLATOR can only be accessed from within the same library group (referenced groupId=`com.google.android.material` from groupId=`revaltronics`)"
         errorLine1="        animateChildTo(0, ENTER_ANIMATION_DURATION.toLong(), AnimationUtils.LINEAR_OUT_SLOW_IN_INTERPOLATOR, true)"
         errorLine2="                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
@@ -559,7 +559,7 @@
 
     <issue
         id="RestrictedApi"
-        message="AnimationUtils.FAST_OUT_LINEAR_IN_INTERPOLATOR can only be accessed from within the same library group (referenced groupId=`com.google.android.material` from groupId=`com.goodwy`)"
+        message="AnimationUtils.FAST_OUT_LINEAR_IN_INTERPOLATOR can only be accessed from within the same library group (referenced groupId=`com.google.android.material` from groupId=`revaltronics`)"
         errorLine1="            AnimationUtils.FAST_OUT_LINEAR_IN_INTERPOLATOR"
         errorLine2="                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
@@ -570,7 +570,7 @@
 
     <issue
         id="RestrictedApi"
-        message="AppCompatCheckBox.setSupportButtonTintList can only be called from within the same library group prefix (referenced groupId=`androidx.appcompat` with prefix androidx from groupId=`com.goodwy`)"
+        message="AppCompatCheckBox.setSupportButtonTintList can only be called from within the same library group prefix (referenced groupId=`androidx.appcompat` with prefix androidx from groupId=`revaltronics`)"
         errorLine1="        supportButtonTintList = colorStateList"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
         <location
@@ -581,7 +581,7 @@
 
     <issue
         id="RestrictedApi"
-        message="AppCompatCheckBox.setSupportButtonTintList can only be called from within the same library group prefix (referenced groupId=`androidx.appcompat` with prefix androidx from groupId=`com.goodwy`)"
+        message="AppCompatCheckBox.setSupportButtonTintList can only be called from within the same library group prefix (referenced groupId=`androidx.appcompat` with prefix androidx from groupId=`revaltronics`)"
         errorLine1="        supportButtonTintList = colorStateList"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
         <location
@@ -592,7 +592,7 @@
 
     <issue
         id="RestrictedApi"
-        message="AppCompatRadioButton.setSupportButtonTintList can only be called from within the same library group prefix (referenced groupId=`androidx.appcompat` with prefix androidx from groupId=`com.goodwy`)"
+        message="AppCompatRadioButton.setSupportButtonTintList can only be called from within the same library group prefix (referenced groupId=`androidx.appcompat` with prefix androidx from groupId=`revaltronics`)"
         errorLine1="        supportButtonTintList = colorStateList"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
         <location
@@ -603,7 +603,7 @@
 
     <issue
         id="RestrictedApi"
-        message="AppCompatRadioButton.setSupportButtonTintList can only be called from within the same library group prefix (referenced groupId=`androidx.appcompat` with prefix androidx from groupId=`com.goodwy`)"
+        message="AppCompatRadioButton.setSupportButtonTintList can only be called from within the same library group prefix (referenced groupId=`androidx.appcompat` with prefix androidx from groupId=`revaltronics`)"
         errorLine1="        supportButtonTintList = colorStateList"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
         <location
@@ -11190,7 +11190,7 @@
     <issue
         id="MissingTranslation"
         message="&quot;donate_new&quot; is not translated in &quot;pt&quot; (Portuguese), &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;lv&quot; (Latvian), &quot;ia&quot; (Interlingua), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;eo&quot; (Esperanto), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;iw&quot; (Hebrew), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;ro&quot; (Romanian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;fi&quot; (Finnish), &quot;bg&quot; (Bulgarian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sk&quot; (Slovak), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;sv&quot; (Swedish), &quot;ko&quot; (Korean), &quot;gl&quot; (Galician), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;, &quot;da&quot; (Danish)"
-        errorLine1="    &lt;string name=&quot;donate_new&quot;>Hello,&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;hope you are enjoying the app. It contains no ads and we aren\&apos;t collecting your data either, please support its development by purchasing &amp;lt;a href=https://play.google.com/store/apps/details?id=com.goodwy.thankyou&amp;gt;Fossify Thank You&amp;lt;/a&amp;gt;. You will also have all app features including color customization unlocked.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;Thank you!&lt;/string>"
+        errorLine1="    &lt;string name=&quot;donate_new&quot;>Hello,&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;hope you are enjoying the app. It contains no ads and we aren\&apos;t collecting your data either, please support its development by purchasing &amp;lt;a href=https://play.google.com/store/apps/details?id=revaltronics.thankyou&amp;gt;Fossify Thank You&amp;lt;/a&amp;gt;. You will also have all app features including color customization unlocked.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;Thank you!&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/values/strings.xml"
@@ -11201,7 +11201,7 @@
     <issue
         id="MissingTranslation"
         message="&quot;donate_short&quot; is not translated in &quot;pt&quot; (Portuguese), &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;lv&quot; (Latvian), &quot;ia&quot; (Interlingua), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;eo&quot; (Esperanto), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;iw&quot; (Hebrew), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;ro&quot; (Romanian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;fi&quot; (Finnish), &quot;bg&quot; (Bulgarian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sk&quot; (Slovak), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;sv&quot; (Swedish), &quot;ko&quot; (Korean), &quot;gl&quot; (Galician), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;, &quot;da&quot; (Danish)"
-        errorLine1="    &lt;string name=&quot;donate_short&quot;>Support us by purchasing &amp;lt;a href=https://play.google.com/store/apps/details?id=com.goodwy.thankyou&amp;gt;Fossify Thank You&amp;lt;/a&amp;gt; please, it will also unlock all app features including color customization.&lt;/string>"
+        errorLine1="    &lt;string name=&quot;donate_short&quot;>Support us by purchasing &amp;lt;a href=https://play.google.com/store/apps/details?id=revaltronics.thankyou&amp;gt;Fossify Thank You&amp;lt;/a&amp;gt; please, it will also unlock all app features including color customization.&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/values/strings.xml"
@@ -11344,7 +11344,7 @@
     <issue
         id="MissingTranslation"
         message="&quot;features_locked&quot; is not translated in &quot;pt&quot; (Portuguese), &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;lv&quot; (Latvian), &quot;ia&quot; (Interlingua), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;eo&quot; (Esperanto), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;iw&quot; (Hebrew), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;nb&quot; (Norwegian Bokmål), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;ro&quot; (Romanian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;fi&quot; (Finnish), &quot;bg&quot; (Bulgarian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sk&quot; (Slovak), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;sv&quot; (Swedish), &quot;ko&quot; (Korean), &quot;gl&quot; (Galician), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;, &quot;da&quot; (Danish)"
-        errorLine1="    &lt;string name=&quot;features_locked&quot;>This feature is locked, please purchase &amp;lt;a href=https://play.google.com/store/apps/details?id=com.goodwy.thankyou&amp;gt;Fossify Thank You&amp;lt;/a&amp;gt; for unlocking the full app.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;It is a one time payment only and if you won\&apos;t be satisfied, we can refund you.&lt;/string>"
+        errorLine1="    &lt;string name=&quot;features_locked&quot;>This feature is locked, please purchase &amp;lt;a href=https://play.google.com/store/apps/details?id=revaltronics.thankyou&amp;gt;Fossify Thank You&amp;lt;/a&amp;gt; for unlocking the full app.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;It is a one time payment only and if you won\&apos;t be satisfied, we can refund you.&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/values/strings.xml"
@@ -13346,7 +13346,7 @@
     <issue
         id="MissingTranslation"
         message="&quot;deprecated_app&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lv&quot; (Latvian), &quot;ia&quot; (Interlingua), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;ms&quot; (Malay), &quot;en&quot; (English), &quot;eo&quot; (Esperanto), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;iw&quot; (Hebrew), &quot;eu&quot; (Basque), &quot;nb&quot; (Norwegian Bokmål), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;bg&quot; (Bulgarian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;si&quot; (Sinhala), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
-        errorLine1="    &lt;string name=&quot;deprecated_app&quot;>DEPRECATED: This version of the app is no longer maintained, get the Pro version at https://play.google.com/store/apps/details?id=com.goodwy..xxx.pro&lt;/string>"
+        errorLine1="    &lt;string name=&quot;deprecated_app&quot;>DEPRECATED: This version of the app is no longer maintained, get the Pro version at https://play.google.com/store/apps/details?id=revaltronics..xxx.pro&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/values/strings.xml"
@@ -17628,7 +17628,7 @@
     <issue
         id="RelativeOverlap"
         message="`@id/customization_text_color_label` can overlap `@id/customization_text_color` if @string/text_color grows due to localized text expansion"
-        errorLine1="                &lt;com.goodwy.commons.views.MyTextView"
+        errorLine1="                &lt;revaltronics.commons.views.MyTextView"
         errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/layout/activity_customization.xml"
@@ -17639,7 +17639,7 @@
     <issue
         id="RelativeOverlap"
         message="`@id/customization_background_color_label` can overlap `@id/customization_background_color` if @string/background_color grows due to localized text expansion"
-        errorLine1="                &lt;com.goodwy.commons.views.MyTextView"
+        errorLine1="                &lt;revaltronics.commons.views.MyTextView"
         errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/layout/activity_customization.xml"
@@ -17650,7 +17650,7 @@
     <issue
         id="RelativeOverlap"
         message="`@id/customization_primary_color_label` can overlap `@id/customization_primary_color` if @string/primary_color grows due to localized text expansion"
-        errorLine1="                &lt;com.goodwy.commons.views.MyTextView"
+        errorLine1="                &lt;revaltronics.commons.views.MyTextView"
         errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/layout/activity_customization.xml"
@@ -17661,7 +17661,7 @@
     <issue
         id="RelativeOverlap"
         message="`@id/customization_accent_color_label` can overlap `@id/customization_accent_color` if @string/accent_color_white grows due to localized text expansion"
-        errorLine1="                &lt;com.goodwy.commons.views.MyTextView"
+        errorLine1="                &lt;revaltronics.commons.views.MyTextView"
         errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/layout/activity_customization.xml"
@@ -17672,7 +17672,7 @@
     <issue
         id="RelativeOverlap"
         message="`@id/customization_app_icon_color_label` can overlap `@id/customization_app_icon_color` if @string/app_icon_color grows due to localized text expansion"
-        errorLine1="                &lt;com.goodwy.commons.views.MyTextView"
+        errorLine1="                &lt;revaltronics.commons.views.MyTextView"
         errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/layout/activity_customization.xml"
@@ -17683,7 +17683,7 @@
     <issue
         id="RelativeOverlap"
         message="`@id/color_picker_new_hex` can overlap `@id/color_picker_old_hex` if @id/color_picker_new_hex grows due to localized text expansion"
-        errorLine1="            &lt;com.goodwy.commons.views.MyEditText"
+        errorLine1="            &lt;revaltronics.commons.views.MyEditText"
         errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/layout/dialog_color_picker.xml"

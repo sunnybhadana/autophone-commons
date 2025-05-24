@@ -12,7 +12,7 @@ group = "com.goodwy"
 version = "6.1.1"
 
 android {
-    namespace = "com.goodwy.commons"
+    namespace = "com.revaltronics.commons"
 
     compileSdk = libs.versions.app.build.compileSDKVersion.get().toInt()
 
@@ -121,7 +121,7 @@ dependencies {
     ksp(libs.androidx.room.compiler)
 
     //Goodwy
-    api(projects.strings)
+    implementation(projects.strings)
     api(libs.billing.client)
     api(libs.rustore.client)
     implementation(libs.behavio.rule)

@@ -28,7 +28,7 @@
             android:src="@drawable/ic_search_vector"
             android:contentDescription="@null" />
 
-        <com.goodwy.commons.views.MyEditText
+        <revaltronics.commons.views.MyEditText
             android:id="@+id/top_toolbar_search"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

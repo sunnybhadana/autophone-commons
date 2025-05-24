@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.goodwy.commons.views.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<revaltronics.commons.views.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/dialog_scrollview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -27,11 +27,11 @@
 
         </com.google.android.material.tabs.TabLayout>
 
-        <com.goodwy.commons.views.MyDialogViewPager
+        <revaltronics.commons.views.MyDialogViewPager
             android:id="@+id/dialog_tab_view_pager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/dialog_tab_layout"/>
 
     </RelativeLayout>
-</com.goodwy.commons.views.MyScrollView>
+</revaltronics.commons.views.MyScrollView>

@@ -15,7 +15,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.goodwy.commons.samples"
+    namespace = "com.revaltronics.commons.samples"
     compileSdk = libs.versions.app.build.compileSDKVersion.get().toInt()
 
     signingConfigs {

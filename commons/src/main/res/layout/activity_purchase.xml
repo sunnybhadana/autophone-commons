@@ -32,7 +32,7 @@
         layout="@layout/top_view_purchase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_behavior="com.goodwy.commons.helpers.PurchaseTopBehavior"/>
+        app:layout_behavior="revaltronics.commons.helpers.PurchaseTopBehavior"/>
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/purchase_nested_scrollview"
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/normal_margin">
 
-            <com.goodwy.commons.views.MyTextView
+            <revaltronics.commons.views.MyTextView
                 android:id="@+id/purchase_apps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -360,14 +360,14 @@
                     android:paddingStart="@dimen/about_margin"
                     tools:ignore="RtlSymmetry">
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/theme_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/themes"
                         android:textSize="16sp" />
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/theme_summary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -410,14 +410,14 @@
                     android:paddingStart="@dimen/about_margin"
                     tools:ignore="RtlSymmetry">
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/color_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/color_title"
                         android:textSize="16sp" />
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/color_summary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -461,14 +461,14 @@
                     android:paddingStart="@dimen/about_margin"
                     tools:ignore="RtlSymmetry">
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/plus_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/plus_title"
                         android:textSize="16sp" />
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/plus_summary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -512,14 +512,14 @@
                     android:paddingStart="@dimen/about_margin"
                     tools:ignore="RtlSymmetry">
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/lifebuoy_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/lifebuoy_title"
                         android:textSize="16sp" />
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/lifebuoy_summary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -579,7 +579,7 @@
                     android:paddingStart="@dimen/about_margin"
                     tools:ignore="RtlSymmetry">
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/collection_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -588,7 +588,7 @@
                         android:text="@string/collection"
                         android:textSize="16sp" />
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/collection_summary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -653,7 +653,7 @@
         android:visibility="gone"
         tools:visibility="visible">
 
-        <com.goodwy.commons.views.MyTextView
+        <revaltronics.commons.views.MyTextView
             android:id="@+id/pro_donate_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -665,7 +665,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.goodwy.commons.views.MyTextView
+        <revaltronics.commons.views.MyTextView
             android:id="@+id/pro_donate_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -695,7 +695,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/pro_donate_text" />
 
-        <com.goodwy.commons.views.MyTextView
+        <revaltronics.commons.views.MyTextView
             android:id="@+id/pro_unlock_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -721,7 +721,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/pro_donate_button">
 
-            <com.goodwy.commons.views.MyMaterialSwitch
+            <revaltronics.commons.views.MyMaterialSwitch
                 android:id="@+id/pro_switch"
                 style="@style/SettingsSwitchStyle"
                 android:layout_width="wrap_content"

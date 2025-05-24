@@ -59,13 +59,13 @@
                     android:layout_toEndOf="@+id/purchase_logo"
                     android:layout_centerVertical="true">
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/settings_purchase_thank_you"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/action_support_project"/>
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/about_app_version"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
                     android:id="@+id/customizationThemeHolder"
                     style="@style/SettingsHolderStyle">
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/customization_theme_label"
                         style="@style/SettingsTextLabelStyle"
                         android:layout_alignParentStart="true"
@@ -113,7 +113,7 @@
                         android:layout_marginEnd="8dp"
                         android:text="@string/theme"/>
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/settings_customize_colors_summary"
                         style="@style/SettingsTextSummaryStyle"
                         android:layout_below="@+id/customization_theme_label"
@@ -122,7 +122,7 @@
                         android:text="@string/pref_theme_summary"
                         android:visibility="gone"/>
 
-                    <com.goodwy.commons.views.MyTextView
+                    <revaltronics.commons.views.MyTextView
                         android:id="@+id/customization_theme"
                         style="@style/SettingsTextValueStyle"
                         android:maxWidth="@dimen/settings_value_width_long"
@@ -132,7 +132,7 @@
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
-            <com.goodwy.commons.views.MyTextView
+            <revaltronics.commons.views.MyTextView
                 android:id="@+id/customizationThemeDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
                         android:id="@+id/customizationPrimaryColorHolder"
                         style="@style/SettingsHolderStyle">
 
-                        <com.goodwy.commons.views.MyTextView
+                        <revaltronics.commons.views.MyTextView
                             android:id="@+id/customization_primary_color_label"
                             style="@style/SettingsTextLabelStyle"
                             android:text="@string/primary_color"/>
@@ -182,7 +182,7 @@
                         android:id="@+id/settingsTopAppBarColorIconHolder"
                         style="@style/SettingsHolderSwitchStyle">
 
-                        <com.goodwy.commons.views.MyMaterialSwitch
+                        <revaltronics.commons.views.MyMaterialSwitch
                             android:id="@+id/settingsTopAppBarColorIcon"
                             style="@style/SettingsSwitchStyle"
                             android:text="@string/top_app_bar_color_icon"
@@ -193,7 +193,7 @@
                         android:id="@+id/settingsTopAppBarColorTitleHolder"
                         style="@style/SettingsHolderSwitchStyle">
 
-                        <com.goodwy.commons.views.MyMaterialSwitch
+                        <revaltronics.commons.views.MyMaterialSwitch
                             android:id="@+id/settingsTopAppBarColorTitle"
                             style="@style/SettingsSwitchStyle"
                             android:text="@string/top_app_bar_color_title"
@@ -220,7 +220,7 @@
                         android:id="@+id/customizationUseAccentColorHolder"
                         style="@style/SettingsHolderSwitchStyle">
 
-                        <com.goodwy.commons.views.MyTextView
+                        <revaltronics.commons.views.MyTextView
                             android:id="@+id/customizationUseAccentColorLabel"
                             style="@style/SettingsTextLabelStyle"
                             android:layout_alignParentStart="true"
@@ -241,7 +241,7 @@
                             android:src="@drawable/ic_question_round"
                             android:contentDescription="@string/use_accent_color_summary" />
 
-                        <com.goodwy.commons.views.MyMaterialSwitch
+                        <revaltronics.commons.views.MyMaterialSwitch
                             android:id="@+id/customizationUseAccentColor"
                             style="@style/SettingsSwitchStyle"
                             android:layout_width="wrap_content"
@@ -256,7 +256,7 @@
                         android:layout_below="@+id/customizationUseAccentColorHolder"
                         style="@style/SettingsHolderStyle">
 
-                        <com.goodwy.commons.views.MyTextView
+                        <revaltronics.commons.views.MyTextView
                             android:id="@+id/customization_accent_color_label"
                             style="@style/SettingsTextLabelStyle"
                             android:text="@string/accent_color"/>
@@ -277,7 +277,7 @@
                         android:layout_below="@+id/customization_accent_color_holder"
                         style="@style/SettingsHolderStyle">
 
-                        <com.goodwy.commons.views.MyTextView
+                        <revaltronics.commons.views.MyTextView
                             android:id="@+id/customization_background_color_label"
                             style="@style/SettingsTextLabelStyle"
                             android:text="@string/background_color"/>
@@ -298,7 +298,7 @@
                         android:layout_below="@+id/customization_background_color_holder"
                         style="@style/SettingsHolderStyle">
 
-                        <com.goodwy.commons.views.MyTextView
+                        <revaltronics.commons.views.MyTextView
                             android:id="@+id/customization_text_color_label"
                             style="@style/SettingsTextLabelStyle"
                             android:text="@string/text_color"/>
@@ -319,12 +319,12 @@
                         android:layout_below="@+id/customization_text_color_holder"
                         style="@style/SettingsHolderStyle">
 
-                        <com.goodwy.commons.views.MyTextView
+                        <revaltronics.commons.views.MyTextView
                             android:id="@+id/customization_text_cursor_color_label"
                             style="@style/SettingsTextLabelStyle"
                             android:text="@string/text_cursor_color"/>
 
-                        <com.goodwy.commons.views.MyTextView
+                        <revaltronics.commons.views.MyTextView
                             android:id="@+id/customization_text_cursor_color_default"
                             style="@style/SettingsTextValueStyle"
                             android:layout_alignParentEnd="true"
@@ -349,7 +349,7 @@
                         android:layout_below="@+id/customizationTextCursorColorHolder"
                         style="@style/SettingsHolderStyle">
 
-                        <com.goodwy.commons.views.MyTextView
+                        <revaltronics.commons.views.MyTextView
                             android:id="@+id/customizationAppIconColorLabel"
                             style="@style/SettingsTextLabelStyle"
                             android:layout_alignParentStart="true"
@@ -403,7 +403,7 @@
                 android:background="?attr/selectableItemBackground"
                 android:visibility="gone">
 
-                <com.goodwy.commons.views.MyMaterialSwitch
+                <revaltronics.commons.views.MyMaterialSwitch
                     android:id="@+id/apply_to_all"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

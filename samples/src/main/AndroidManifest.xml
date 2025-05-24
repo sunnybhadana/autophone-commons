@@ -5,16 +5,16 @@
     <uses-permission android:name="com.android.vending.BILLING" />
 
     <queries>
-        <package android:name="com.goodwy.dialer.debug" />
-        <package android:name="com.goodwy.dialer" />
-        <package android:name="com.goodwy.contacts.debug" />
-        <package android:name="com.goodwy.contacts" />
-        <package android:name="com.goodwy.smsmessenger.debug" />
-        <package android:name="com.goodwy.smsmessenger" />
+        <package android:name="com.revaltronics.dialer.debug" />
+        <package android:name="com.revaltronics.dialer" />
+        <package android:name="com.revaltronics.contacts.debug" />
+        <package android:name="com.revaltronics.contacts" />
+        <package android:name="com.revaltronics.smsmessenger.debug" />
+        <package android:name="com.revaltronics.smsmessenger" />
     </queries>
 
     <application
-        android:name="com.goodwy.commons.samples.App"
+        android:name="com.revaltronics.commons.samples.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/commons_app_name"
@@ -24,7 +24,7 @@
         android:theme="@style/TranslucentTheme">
 
         <activity
-            android:name="com.goodwy.commons.samples.activities.MainActivity"
+            android:name="com.revaltronics.commons.samples.activities.MainActivity"
             android:configChanges="orientation|uiMode"
             android:exported="true">
         </activity>
@@ -33,13 +33,13 @@
             android:exported="false"
             android:theme="@style/SplashTheme"/>
 
-        <activity android:name="com.goodwy.commons.activities.AboutActivity"
+        <activity android:name="com.revaltronics.commons.activities.AboutActivity"
             android:configChanges="orientation|uiMode" />
 
-        <activity android:name="com.goodwy.commons.activities.CustomizationActivity"
+        <activity android:name="com.revaltronics.commons.activities.CustomizationActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|uiMode"/>
 
-        <activity android:name="com.goodwy.commons.activities.PurchaseActivity"
+        <activity android:name="com.revaltronics.commons.activities.PurchaseActivity"
             android:exported="true"
             android:configChanges="orientation|keyboardHidden|screenSize|uiMode">
             <intent-filter>
@@ -51,16 +51,16 @@
         </activity>
 
         <activity
-            android:name="com.goodwy.commons.activities.ManageBlockedNumbersActivity"
+            android:name="com.revaltronics.commons.activities.ManageBlockedNumbersActivity"
             android:label="@string/manage_blocked_numbers" />
 
         <activity
-            android:name="com.goodwy.commons.samples.activities.TestDialogActivity"
+            android:name="com.revaltronics.commons.samples.activities.TestDialogActivity"
             android:enableOnBackInvokedCallback="true"
             android:exported="false" />
 
         <activity-alias
-            android:name="com.goodwy.commons.samples.activities.SplashActivity.Original"
+            android:name="com.revaltronics.commons.samples.activities.SplashActivity.Original"
             android:enabled="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher"

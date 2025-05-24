@@ -174,7 +174,7 @@
             Thanks to all contributors and other supporters!
         ]]>
     </string>
-    <string name="deprecated_app_g">已弃用：该应用版本已不再维护，请在以下链接获取专业版 https://play.google.com/store/apps/details?id=com.goodwy.xxx.pro</string>
+    <string name="deprecated_app_g">已弃用：该应用版本已不再维护，请在以下链接获取专业版 https://play.google.com/store/apps/details?id=revaltronics.xxx.pro</string>
     <string name="pro_app_refund_g">别忘了如果您在2小时内卸载任何付费应用将会自动退款。如果您想在之后退款，只需通过 goodwy.dev@gmail.com 联系我们即可。这样您就可以放心试用了 :)</string>
 
     <!-- Contacts -->

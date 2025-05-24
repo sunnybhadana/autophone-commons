@@ -178,7 +178,7 @@
             Thanks to all contributors and other supporters!
         ]]>
     </string>
-    <string name="deprecated_app_g">DEPRECATED: This version of the app is no longer maintained, get the Pro version at https://play.google.com/store/apps/details?id=com.goodwy.xxx.pro</string>
+    <string name="deprecated_app_g">DEPRECATED: This version of the app is no longer maintained, get the Pro version at https://play.google.com/store/apps/details?id=revaltronics.xxx.pro</string>
     <string name="pro_app_refund_g">Don\'t forget that if you uninstall any paid app within 2 hours, you will automatically be refunded. If you want a refund anytime later, just contact us at goodwy.dev@gmail.com and you will get it. That makes it easy to try it out :)</string>
 
     <!-- Contacts -->

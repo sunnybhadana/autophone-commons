@@ -1222,7 +1222,8 @@
     <ID>MaxLineLength:Activity.kt$if</ID>
     <ID>MaxLineLength:Activity.kt$return</ID>
     <ID>MaxLineLength:Activity.kt$showPickSecondsDialog(seconds, isSnoozePicker, showSecondsAtCustomDialog, showDuringDayOption, cancelCallback, callback)</ID>
-    <ID>MaxLineLength:Activity.kt$val packageName = if (baseConfig.appId.contains(".debug", true)) "com.goodwy.phone.debug" else "com.goodwy.phone"</ID>
+    <ID>MaxLineLength:Activity.kt$val packageName = if (baseConfig.appId.contains(".debug", true))
+        "revaltronics.phone.debug" else "revaltronics.phone"</ID>
     <ID>MaxLineLength:ActivityExtensions.kt$"You are using a fake version of the app. For your own safety download the original one from Google Play. Thanks"</ID>
     <ID>MaxLineLength:ActivityExtensions.kt$fun</ID>
     <ID>MaxLineLength:AlertDialog.kt$// in dialogs, lets use findViewById, because while some dialogs use MyEditText, material theme dialogs use TextInputEditText so the system takes care of it</ID>
@@ -1367,7 +1368,8 @@
     <ID>MaxLineLength:Context-styling.kt$fun Context.isWhiteTheme()</ID>
     <ID>MaxLineLength:Context-styling.kt$showCheckmarksOnSwitches = cursor.getIntValue(MyContentProvider.COL_SHOW_CHECKMARKS_ON_SWITCHES) != 0</ID>
     <ID>MaxLineLength:Context-styling.kt$val state = if (enable) PackageManager.COMPONENT_ENABLED_STATE_ENABLED else PackageManager.COMPONENT_ENABLED_STATE_DISABLED</ID>
-    <ID>MaxLineLength:Context.kt$// if media content uri is null, get our custom uri like content://com.goodwy.gallery.provider/external_files/emulated/0/DCIM/IMG_20171104_233915.jpg</ID>
+    <ID>MaxLineLength:Context.kt$// if media content uri is null, get our custom uri like
+        content://revaltronics.gallery.provider/external_files/emulated/0/DCIM/IMG_20171104_233915.jpg</ID>
     <ID>MaxLineLength:Context.kt$fun</ID>
     <ID>MaxLineLength:Context.kt$fun Context.getCanAppBeUpgraded()</ID>
     <ID>MaxLineLength:Context.kt$fun Context.getDefaultAlarmSound(type: Int)</ID>
@@ -1642,11 +1644,15 @@
     <ID>NestedBlockDepth:MyRecyclerView.kt$MyRecyclerView$override fun onScrollChanged(l: Int, t: Int, oldl: Int, oldt: Int)</ID>
     <ID>NestedBlockDepth:SelectAlarmSoundDialog.kt$SelectAlarmSoundDialog$private fun alarmClicked(alarmSound: AlarmSound)</ID>
     <ID>NestedBlockDepth:VcfExporter.kt$VcfExporter$fun exportContacts( activity: BaseSimpleActivity, outputStream: OutputStream?, contacts: ArrayList&lt;Contact&gt;, showExportingToast: Boolean, callback: (result: ExportResult) -&gt; Unit )</ID>
-    <ID>PackageNaming:AlertDialogState.kt$package com.goodwy.commons.compose.alert_dialog</ID>
-    <ID>PackageNaming:AlertDialogsExtensions.kt$package com.goodwy.commons.compose.alert_dialog</ID>
-    <ID>PackageNaming:BottomSheetDialogState.kt$package com.goodwy.commons.compose.bottom_sheet</ID>
-    <ID>PackageNaming:BottomSheetDialogsExtensions.kt$package com.goodwy.commons.compose.bottom_sheet</ID>
-    <ID>PackageNaming:SystemUIController.kt$package com.goodwy.commons.compose.system_ui_controller</ID>
+    <ID>PackageNaming:AlertDialogState.kt$package revaltronics.commons.compose.alert_dialog</ID>
+    <ID>PackageNaming:AlertDialogsExtensions.kt$package
+        revaltronics.commons.compose.alert_dialog</ID>
+    <ID>PackageNaming:BottomSheetDialogState.kt$package
+        revaltronics.commons.compose.bottom_sheet</ID>
+    <ID>PackageNaming:BottomSheetDialogsExtensions.kt$package
+        revaltronics.commons.compose.bottom_sheet</ID>
+    <ID>PackageNaming:SystemUIController.kt$package
+        revaltronics.commons.compose.system_ui_controller</ID>
     <ID>ReturnCount:Activity.kt$fun Activity.getFinalUriFromPath(path: String, applicationId: String): Uri?</ID>
     <ID>ReturnCount:AlphanumericComparator.kt$AlphanumericComparator$fun compare(string1: String, string2: String): Int</ID>
     <ID>ReturnCount:BaseSecurityTab.kt$BaseSecurityTab$private fun getCountdown(): Int</ID>
@@ -1732,39 +1738,39 @@
     <ID>TooGenericExceptionThrown:PasswordTypesAdapter.kt$PasswordTypesAdapter$throw RuntimeException("Only 3 tabs allowed")</ID>
     <ID>TooGenericExceptionThrown:RenameAdapter.kt$RenameAdapter$throw RuntimeException("Only 2 tabs allowed")</ID>
     <ID>TooManyFunctions:AboutActivity.kt$AboutActivity : BaseComposeActivity</ID>
-    <ID>TooManyFunctions:Activity.kt$com.goodwy.commons.extensions.Activity.kt</ID>
+    <ID>TooManyFunctions:Activity.kt$revaltronics.commons.extensions.Activity.kt</ID>
     <ID>TooManyFunctions:BaseConfig.kt$BaseConfig</ID>
     <ID>TooManyFunctions:BaseSecurityTab.kt$BaseSecurityTab : ConstraintLayoutSecurityTab</ID>
     <ID>TooManyFunctions:BaseSimpleActivity.kt$BaseSimpleActivity : AppCompatActivity</ID>
     <ID>TooManyFunctions:BottomActionMenuView.kt$BottomActionMenuView : LinearLayout</ID>
     <ID>TooManyFunctions:Breadcrumbs.kt$Breadcrumbs : HorizontalScrollView</ID>
-    <ID>TooManyFunctions:ComposeExtensions.kt$com.goodwy.commons.compose.extensions.ComposeExtensions.kt</ID>
-    <ID>TooManyFunctions:Constants.kt$com.goodwy.commons.helpers.Constants.kt</ID>
+    <ID>TooManyFunctions:ComposeExtensions.kt$revaltronics.commons.compose.extensions.ComposeExtensions.kt</ID>
+    <ID>TooManyFunctions:Constants.kt$revaltronics.commons.helpers.Constants.kt</ID>
     <ID>TooManyFunctions:Contact.kt$Contact : Comparable</ID>
     <ID>TooManyFunctions:ContactsHelper.kt$ContactsHelper</ID>
-    <ID>TooManyFunctions:Context-contacts.kt$com.goodwy.commons.extensions.Context-contacts.kt</ID>
-    <ID>TooManyFunctions:Context-storage-sdk30.kt$com.goodwy.commons.extensions.Context-storage-sdk30.kt</ID>
-    <ID>TooManyFunctions:Context-storage.kt$com.goodwy.commons.extensions.Context-storage.kt</ID>
-    <ID>TooManyFunctions:Context-styling.kt$com.goodwy.commons.extensions.Context-styling.kt</ID>
-    <ID>TooManyFunctions:Context.kt$com.goodwy.commons.extensions.Context.kt</ID>
+    <ID>TooManyFunctions:Context-contacts.kt$revaltronics.commons.extensions.Context-contacts.kt</ID>
+    <ID>TooManyFunctions:Context-storage-sdk30.kt$revaltronics.commons.extensions.Context-storage-sdk30.kt</ID>
+    <ID>TooManyFunctions:Context-storage.kt$revaltronics.commons.extensions.Context-storage.kt</ID>
+    <ID>TooManyFunctions:Context-styling.kt$revaltronics.commons.extensions.Context-styling.kt</ID>
+    <ID>TooManyFunctions:Context.kt$revaltronics.commons.extensions.Context.kt</ID>
     <ID>TooManyFunctions:Converters.kt$Converters</ID>
     <ID>TooManyFunctions:CopyMoveTask.kt$CopyMoveTask : AsyncTask</ID>
-    <ID>TooManyFunctions:CustomIntervalPickerDialog.kt$com.goodwy.commons.dialogs.CustomIntervalPickerDialog.kt</ID>
+    <ID>TooManyFunctions:CustomIntervalPickerDialog.kt$revaltronics.commons.dialogs.CustomIntervalPickerDialog.kt</ID>
     <ID>TooManyFunctions:CustomizationActivity.kt$CustomizationActivity : BaseSimpleActivity</ID>
-    <ID>TooManyFunctions:File.kt$com.goodwy.commons.extensions.File.kt</ID>
+    <ID>TooManyFunctions:File.kt$revaltronics.commons.extensions.File.kt</ID>
     <ID>TooManyFunctions:FileDirItem.kt$FileDirItem : Comparable</ID>
     <ID>TooManyFunctions:FilePickerDialog.kt$FilePickerDialog : BreadcrumbsListener</ID>
     <ID>TooManyFunctions:FilepickerFavoritesAdapter.kt$FilepickerFavoritesAdapter : MyRecyclerViewAdapter</ID>
     <ID>TooManyFunctions:FilepickerItemsAdapter.kt$FilepickerItemsAdapter : MyRecyclerViewAdapterOnPopupTextUpdate</ID>
-    <ID>TooManyFunctions:Int.kt$com.goodwy.commons.extensions.Int.kt</ID>
+    <ID>TooManyFunctions:Int.kt$revaltronics.commons.extensions.Int.kt</ID>
     <ID>TooManyFunctions:LocalContactsHelper.kt$LocalContactsHelper</ID>
     <ID>TooManyFunctions:ManageBlockedNumbersActivity.kt$ManageBlockedNumbersActivity : BaseSimpleActivity</ID>
-    <ID>TooManyFunctions:ManageBlockedNumbersScreen.kt$com.goodwy.commons.compose.screens.ManageBlockedNumbersScreen.kt</ID>
+    <ID>TooManyFunctions:ManageBlockedNumbersScreen.kt$revaltronics.commons.compose.screens.ManageBlockedNumbersScreen.kt</ID>
     <ID>TooManyFunctions:MyRecyclerViewAdapter.kt$MyRecyclerViewAdapter : Adapter</ID>
     <ID>TooManyFunctions:MyRecyclerViewListAdapter.kt$MyRecyclerViewListAdapter&lt;T&gt; : ListAdapter</ID>
     <ID>TooManyFunctions:SimpleContactsHelper.kt$SimpleContactsHelper</ID>
-    <ID>TooManyFunctions:String.kt$com.goodwy.commons.extensions.String.kt</ID>
-    <ID>TooManyFunctions:View.kt$com.goodwy.commons.extensions.View.kt</ID>
+    <ID>TooManyFunctions:String.kt$revaltronics.commons.extensions.String.kt</ID>
+    <ID>TooManyFunctions:View.kt$revaltronics.commons.extensions.View.kt</ID>
     <ID>TopLevelPropertyNaming:ChangeDateTimeFormatDialog.kt$private const val timeSample = 1676419200000 // February 15, 2023</ID>
     <ID>UnusedParameter:MyAppCompatCheckbox.kt$MyAppCompatCheckbox$backgroundColor: Int</ID>
     <ID>UnusedParameter:MyAppCompatSpinner.kt$MyAppCompatSpinner$accentColor: Int</ID>
@@ -1868,138 +1874,147 @@
     <ID>VariableNaming:StoragePickerDialog.kt$StoragePickerDialog$private val ID_ROOT = 4</ID>
     <ID>VariableNaming:StoragePickerDialog.kt$StoragePickerDialog$private val ID_SD = 2</ID>
     <ID>WildcardImport:AboutActivity.kt$import android.content.Intent.*</ID>
-    <ID>WildcardImport:AboutActivity.kt$import com.goodwy.commons.compose.screens.*</ID>
-    <ID>WildcardImport:AboutActivity.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:AboutActivity.kt$import com.goodwy.commons.helpers.*</ID>
+    <ID>WildcardImport:AboutActivity.kt$import revaltronics.commons.compose.screens.*</ID>
+    <ID>WildcardImport:AboutActivity.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:AboutActivity.kt$import revaltronics.commons.helpers.*</ID>
     <ID>WildcardImport:ActionMenu.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:ActionMenu.kt$import androidx.compose.material3.*</ID>
     <ID>WildcardImport:ActionMenu.kt$import androidx.compose.runtime.*</ID>
     <ID>WildcardImport:Activity.kt$import android.content.*</ID>
     <ID>WildcardImport:Activity.kt$import java.io.*</ID>
-    <ID>WildcardImport:Activity.kt$import com.goodwy.commons.dialogs.*</ID>
-    <ID>WildcardImport:Activity.kt$import com.goodwy.commons.helpers.*</ID>
-    <ID>WildcardImport:Activity.kt$import com.goodwy.commons.models.*</ID>
-    <ID>WildcardImport:ActivityExtensions.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:Activity.kt$import revaltronics.commons.dialogs.*</ID>
+    <ID>WildcardImport:Activity.kt$import revaltronics.commons.helpers.*</ID>
+    <ID>WildcardImport:Activity.kt$import revaltronics.commons.models.*</ID>
+    <ID>WildcardImport:ActivityExtensions.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:AddBlockedNumberDialog.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:AddBlockedNumberDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:AddBlockedNumberDialog.kt$import
+        revaltronics.commons.compose.alert_dialog.*</ID>
     <ID>WildcardImport:AlertDialogState.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:AppLockActivity.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:AppSideloadedDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
-    <ID>WildcardImport:AppSideloadedDialog.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:AppLockActivity.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:AppSideloadedDialog.kt$import revaltronics.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:AppSideloadedDialog.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:AppTheme.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:BaseBottomSheetDialogFragment.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:BaseSimpleActivity.kt$import com.goodwy.commons.dialogs.*</ID>
-    <ID>WildcardImport:BaseSimpleActivity.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:BaseSimpleActivity.kt$import com.goodwy.commons.helpers.*</ID>
-    <ID>WildcardImport:BaseSplashActivity.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:BiometricIdTab.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:BaseBottomSheetDialogFragment.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:BaseSimpleActivity.kt$import revaltronics.commons.dialogs.*</ID>
+    <ID>WildcardImport:BaseSimpleActivity.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:BaseSimpleActivity.kt$import revaltronics.commons.helpers.*</ID>
+    <ID>WildcardImport:BaseSplashActivity.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:BiometricIdTab.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:BottomActionMenuItemPopup.kt$import android.view.*</ID>
     <ID>WildcardImport:BottomSheetDialogState.kt$import androidx.compose.runtime.*</ID>
     <ID>WildcardImport:BottomSheetDialogsExtensions.kt$import androidx.compose.foundation.layout.*</ID>
-    <ID>WildcardImport:Breadcrumbs.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:Breadcrumbs.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:CallConfirmationDialog.kt$import androidx.compose.animation.core.*</ID>
-    <ID>WildcardImport:CallConfirmationDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:CallConfirmationDialog.kt$import
+        revaltronics.commons.compose.alert_dialog.*</ID>
     <ID>WildcardImport:ChangeDateTimeFormatDialog.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:ChangeDateTimeFormatDialog.kt$import androidx.compose.material3.*</ID>
     <ID>WildcardImport:ChangeDateTimeFormatDialog.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:ChangeDateTimeFormatDialog.kt$import com.goodwy.commons.helpers.*</ID>
+    <ID>WildcardImport:ChangeDateTimeFormatDialog.kt$import revaltronics.commons.helpers.*</ID>
     <ID>WildcardImport:ChangeViewTypeDialog.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:ChangeViewTypeDialog.kt$import androidx.compose.runtime.*</ID>
     <ID>WildcardImport:ColorPickerDialog.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:ColorPickerDialog.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:ColorPickerDialog.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:ColorPickerDialog.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:ColorPickerSquare.kt$import android.graphics.*</ID>
     <ID>WildcardImport:ComposeExtensions.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:ConfirmationAdvancedDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
-    <ID>WildcardImport:ConfirmationDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
-    <ID>WildcardImport:Contact.kt$import com.goodwy.commons.helpers.*</ID>
+    <ID>WildcardImport:ConfirmationAdvancedDialog.kt$import
+        revaltronics.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:ConfirmationDialog.kt$import revaltronics.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:Contact.kt$import revaltronics.commons.helpers.*</ID>
     <ID>WildcardImport:ContactsHelper.kt$import android.content.*</ID>
     <ID>WildcardImport:ContactsHelper.kt$import android.provider.ContactsContract.*</ID>
-    <ID>WildcardImport:ContactsHelper.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:ContactsHelper.kt$import com.goodwy.commons.models.contacts.*</ID>
-    <ID>WildcardImport:Context-contacts.kt$import com.goodwy.commons.helpers.*</ID>
+    <ID>WildcardImport:ContactsHelper.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:ContactsHelper.kt$import revaltronics.commons.models.contacts.*</ID>
+    <ID>WildcardImport:Context-contacts.kt$import revaltronics.commons.helpers.*</ID>
     <ID>WildcardImport:Context-storage.kt$import android.provider.MediaStore.*</ID>
     <ID>WildcardImport:Context-storage.kt$import java.io.*</ID>
-    <ID>WildcardImport:Context-storage.kt$import com.goodwy.commons.helpers.*</ID>
-    <ID>WildcardImport:Context-styling.kt$import com.goodwy.commons.helpers.*</ID>
-    <ID>WildcardImport:Context-styling.kt$import com.goodwy.commons.views.*</ID>
+    <ID>WildcardImport:Context-storage.kt$import revaltronics.commons.helpers.*</ID>
+    <ID>WildcardImport:Context-styling.kt$import revaltronics.commons.helpers.*</ID>
+    <ID>WildcardImport:Context-styling.kt$import revaltronics.commons.views.*</ID>
     <ID>WildcardImport:Context.kt$import android.content.*</ID>
     <ID>WildcardImport:Context.kt$import android.os.*</ID>
     <ID>WildcardImport:Context.kt$import android.provider.MediaStore.*</ID>
-    <ID>WildcardImport:Context.kt$import com.goodwy.commons.helpers.*</ID>
-    <ID>WildcardImport:Converters.kt$import com.goodwy.commons.models.contacts.*</ID>
-    <ID>WildcardImport:CopyMoveTask.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:Context.kt$import revaltronics.commons.helpers.*</ID>
+    <ID>WildcardImport:Converters.kt$import revaltronics.commons.models.contacts.*</ID>
+    <ID>WildcardImport:CopyMoveTask.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:CreateNewFolderDialog.kt$import androidx.compose.material3.*</ID>
     <ID>WildcardImport:CreateNewFolderDialog.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:CreateNewFolderDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
-    <ID>WildcardImport:CreateNewFolderDialog.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:CreateNewFolderDialog.kt$import
+        revaltronics.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:CreateNewFolderDialog.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:CustomIntervalPickerDialog.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:CustomIntervalPickerDialog.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:CustomIntervalPickerDialog.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:CustomizationActivity.kt$import com.goodwy.commons.dialogs.*</ID>
-    <ID>WildcardImport:CustomizationActivity.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:CustomizationActivity.kt$import com.goodwy.commons.helpers.*</ID>
-    <ID>WildcardImport:DonateDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
-    <ID>WildcardImport:DonateDialog.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:CustomIntervalPickerDialog.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:CustomizationActivity.kt$import revaltronics.commons.dialogs.*</ID>
+    <ID>WildcardImport:CustomizationActivity.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:CustomizationActivity.kt$import revaltronics.commons.helpers.*</ID>
+    <ID>WildcardImport:DonateDialog.kt$import revaltronics.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:DonateDialog.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:DragHandler.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:DynamicTheme.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:DynamicTheme.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:EnterPasswordDialog.kt$import androidx.compose.material3.*</ID>
     <ID>WildcardImport:EnterPasswordDialog.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:EnterPasswordDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
-    <ID>WildcardImport:EnterPasswordDialog.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:ExportBlockedNumbersDialog.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:ExportSettingsDialog.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:EnterPasswordDialog.kt$import revaltronics.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:EnterPasswordDialog.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:ExportBlockedNumbersDialog.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:ExportSettingsDialog.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:FAQScreen.kt$import androidx.compose.foundation.layout.*</ID>
-    <ID>WildcardImport:FeatureLockedDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
-    <ID>WildcardImport:FeatureLockedDialog.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:File.kt$import com.goodwy.commons.helpers.*</ID>
+    <ID>WildcardImport:FeatureLockedDialog.kt$import revaltronics.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:FeatureLockedDialog.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:File.kt$import revaltronics.commons.helpers.*</ID>
     <ID>WildcardImport:FileConflictDialog.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:FileConflictDialog.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:FileDirItem.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:FileDirItem.kt$import com.goodwy.commons.helpers.*</ID>
-    <ID>WildcardImport:FilePickerDialog.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:FilepickerItemsAdapter.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:FingerprintTab.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:FolderLockingNoticeDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
-    <ID>WildcardImport:LicenseActivity.kt$import com.goodwy.commons.helpers.*</ID>
-    <ID>WildcardImport:LicenseScreen.kt$import com.goodwy.commons.helpers.*</ID>
+    <ID>WildcardImport:FileDirItem.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:FileDirItem.kt$import revaltronics.commons.helpers.*</ID>
+    <ID>WildcardImport:FilePickerDialog.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:FilepickerItemsAdapter.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:FingerprintTab.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:FolderLockingNoticeDialog.kt$import
+        revaltronics.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:LicenseActivity.kt$import revaltronics.commons.helpers.*</ID>
+    <ID>WildcardImport:LicenseScreen.kt$import revaltronics.commons.helpers.*</ID>
     <ID>WildcardImport:LineColorPickerDialog.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:LineColorPickerDialog.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:LineColorPickerDialog.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:LineColorPickerDialog.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:ManageBlockedNumbersActivity.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:ManageBlockedNumbersActivity.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:ManageBlockedNumbersActivity.kt$import com.goodwy.commons.helpers.*</ID>
+    <ID>WildcardImport:ManageBlockedNumbersActivity.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:ManageBlockedNumbersActivity.kt$import revaltronics.commons.helpers.*</ID>
     <ID>WildcardImport:ManageBlockedNumbersScreen.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:ManageBlockedNumbersScreen.kt$import androidx.compose.material3.*</ID>
     <ID>WildcardImport:ManageBlockedNumbersScreen.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:ManageBlockedNumbersScreen.kt$import com.goodwy.commons.compose.extensions.*</ID>
-    <ID>WildcardImport:ManageBlockedNumbersScreen.kt$import com.goodwy.commons.compose.lists.*</ID>
-    <ID>WildcardImport:ManageBlockedNumbersScreen.kt$import com.goodwy.commons.compose.theme.*</ID>
+    <ID>WildcardImport:ManageBlockedNumbersScreen.kt$import
+        revaltronics.commons.compose.extensions.*</ID>
+    <ID>WildcardImport:ManageBlockedNumbersScreen.kt$import revaltronics.commons.compose.lists.*</ID>
+    <ID>WildcardImport:ManageBlockedNumbersScreen.kt$import revaltronics.commons.compose.theme.*</ID>
     <ID>WildcardImport:MyRecyclerViewAdapter.kt$import android.view.*</ID>
-    <ID>WildcardImport:MyRecyclerViewAdapter.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:MyRecyclerViewAdapter.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:MyRecyclerViewListAdapter.kt$import android.view.*</ID>
-    <ID>WildcardImport:MyRecyclerViewListAdapter.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:MySearchMenu.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:OpenDeviceSettingsDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
-    <ID>WildcardImport:PermissionRequiredDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
-    <ID>WildcardImport:PinTab.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:PropertiesDialog.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:PropertiesDialog.kt$import com.goodwy.commons.helpers.*</ID>
-    <ID>WildcardImport:PurchaseThankYouDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
-    <ID>WildcardImport:PurchaseThankYouDialog.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:MyRecyclerViewListAdapter.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:MySearchMenu.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:OpenDeviceSettingsDialog.kt$import
+        revaltronics.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:PermissionRequiredDialog.kt$import
+        revaltronics.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:PinTab.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:PropertiesDialog.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:PropertiesDialog.kt$import revaltronics.commons.helpers.*</ID>
+    <ID>WildcardImport:PurchaseThankYouDialog.kt$import
+        revaltronics.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:PurchaseThankYouDialog.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:RadioButtonDialogComponent.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:RadioGroupDialog.kt$import androidx.compose.runtime.*</ID>
     <ID>WildcardImport:RateStarsDialog.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:RateStarsDialog.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:RateStarsDialog.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:RenameDialog.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:RenameItemDialog.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:RenameItemsDialog.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:RenamePatternTab.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:RenameSimpleTab.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:SecurityDialog.kt$import com.goodwy.commons.extensions.*</ID>
-    <ID>WildcardImport:SecurityDialog.kt$import com.goodwy.commons.helpers.*</ID>
-    <ID>WildcardImport:SelectAlarmSoundDialog.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:RateStarsDialog.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:RenameDialog.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:RenameItemDialog.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:RenameItemsDialog.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:RenamePatternTab.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:RenameSimpleTab.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:SecurityDialog.kt$import revaltronics.commons.extensions.*</ID>
+    <ID>WildcardImport:SecurityDialog.kt$import revaltronics.commons.helpers.*</ID>
+    <ID>WildcardImport:SelectAlarmSoundDialog.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:SettingsCheckBoxComponent.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:SettingsCheckBoxComponent.kt$import androidx.compose.material3.*</ID>
     <ID>WildcardImport:SettingsGroup.kt$import androidx.compose.foundation.layout.*</ID>
@@ -2010,20 +2025,20 @@
     <ID>WildcardImport:SettingsSwitchComponent.kt$import androidx.compose.material3.*</ID>
     <ID>WildcardImport:SimpleColumnScaffold.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:SimpleColumnScaffold.kt$import androidx.compose.material3.*</ID>
-    <ID>WildcardImport:SimpleContactsHelper.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:SimpleContactsHelper.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:SimpleLazyListScaffold.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:SimpleLazyListScaffold.kt$import androidx.compose.material3.*</ID>
-    <ID>WildcardImport:SimpleListItemAdapter.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:SimpleListItemAdapter.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:SimpleScaffoldTopBar.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:SimpleScaffoldTopBar.kt$import androidx.compose.material3.*</ID>
-    <ID>WildcardImport:StoragePickerDialog.kt$import com.goodwy.commons.extensions.*</ID>
+    <ID>WildcardImport:StoragePickerDialog.kt$import revaltronics.commons.extensions.*</ID>
     <ID>WildcardImport:String.kt$import android.text.*</ID>
-    <ID>WildcardImport:String.kt$import com.goodwy.commons.helpers.*</ID>
+    <ID>WildcardImport:String.kt$import revaltronics.commons.helpers.*</ID>
     <ID>WildcardImport:Theme.kt$import androidx.compose.material3.*</ID>
     <ID>WildcardImport:Theme.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:UpgradeToProDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:UpgradeToProDialog.kt$import revaltronics.commons.compose.alert_dialog.*</ID>
     <ID>WildcardImport:VcfExporter.kt$import ezvcard.property.*</ID>
-    <ID>WildcardImport:WhatsNewDialog.kt$import com.goodwy.commons.compose.alert_dialog.*</ID>
+    <ID>WildcardImport:WhatsNewDialog.kt$import revaltronics.commons.compose.alert_dialog.*</ID>
     <ID>WildcardImport:WritePermissionDialog.kt$import androidx.compose.foundation.layout.*</ID>
   </CurrentIssues>
 </SmellBaseline>

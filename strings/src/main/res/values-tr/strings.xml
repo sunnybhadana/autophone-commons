@@ -189,7 +189,7 @@
             Tüm destekçi ve katılımcılara teşekkürler!
         ]]>
     </string>
-    <string name="deprecated_app_g">Kullanımdan kaldırıldı: Uygulamanın bu sürümü artık sağlanmıyor, Pro sürümünü şuradan indirin: https://play.google.com/store/apps/details?id=com.goodwy.xxx.pro (Eski link düzeltilmeli) </string>
+    <string name="deprecated_app_g">Kullanımdan kaldırıldı: Uygulamanın bu sürümü artık sağlanmıyor, Pro sürümünü şuradan indirin: https://play.google.com/store/apps/details?id=revaltronics.xxx.pro (Eski link düzeltilmeli) </string>
     <string name="pro_app_refund_g">Ücretli herhangi bir uygulamayı 2 saat içinde kaldırırsanız, otomatik olarak iade edileceğini unutmayın. İstediğiniz zaman geri ödeme almak isterseniz, goodwy.dev@gmail.com adresinden bizimle iletişime geçmeniz yeterli olacaktır. Bu denemeyi kolaylaştırır :)</string>
 
     <!-- Contacts -->
