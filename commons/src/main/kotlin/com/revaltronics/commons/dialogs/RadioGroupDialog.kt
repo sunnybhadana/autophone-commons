@@ -38,6 +38,7 @@ import com.revaltronics.commons.extensions.getAlertDialogBuilder
 import com.revaltronics.commons.extensions.onGlobalLayout
 import com.revaltronics.commons.extensions.setupDialogStuff
 import com.revaltronics.commons.models.RadioItem
+import com.revaltronics.commons.R
 
 class RadioGroupDialog(
     val activity: Activity, val items: ArrayList<RadioItem>, val checkedItemId: Int = -1, val titleId: Int = 0,

@@ -47,6 +47,7 @@ import com.revaltronics.commons.extensions.fromHtml
 import com.revaltronics.commons.extensions.getAlertDialogBuilder
 import com.revaltronics.commons.extensions.humanizePath
 import com.revaltronics.commons.extensions.setupDialogStuff
+import com.revaltronics.commons.R
 
 class WritePermissionDialog(activity: Activity, val writePermissionDialogMode: WritePermissionDialogMode, val callback: () -> Unit) {
 

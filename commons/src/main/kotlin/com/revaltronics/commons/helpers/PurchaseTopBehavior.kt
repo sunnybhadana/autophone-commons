@@ -8,6 +8,7 @@ import com.behaviorule.arturdumchev.library.*
 import com.revaltronics.commons.databinding.ActivityPurchaseBinding
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.appbar.CollapsingToolbarLayout
+import com.revaltronics.commons.R
 
 class PurchaseTopBehavior(
     context: Context?,

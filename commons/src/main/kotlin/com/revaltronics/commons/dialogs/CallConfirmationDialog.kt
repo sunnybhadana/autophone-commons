@@ -33,6 +33,7 @@ import com.revaltronics.commons.compose.extensions.MyDevices
 import com.revaltronics.commons.compose.theme.AppThemeSurface
 import com.revaltronics.commons.databinding.DialogCallConfirmationBinding
 import com.revaltronics.commons.extensions.*
+import com.revaltronics.commons.R
 
 class CallConfirmationDialog(val activity: BaseSimpleActivity, private val callee: String, private val callback: () -> Unit) {
     private var view = DialogCallConfirmationBinding.inflate(activity.layoutInflater, null, false)

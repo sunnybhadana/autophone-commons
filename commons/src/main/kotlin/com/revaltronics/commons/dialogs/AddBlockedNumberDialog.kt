@@ -19,6 +19,7 @@ import com.revaltronics.commons.compose.alert_dialog.*
 import com.revaltronics.commons.compose.extensions.MyDevices
 import com.revaltronics.commons.compose.theme.AppThemeSurface
 import com.revaltronics.commons.models.BlockedNumber
+import com.revaltronics.commons.R
 
 @Composable
 fun AddOrEditBlockedNumberAlertDialog(

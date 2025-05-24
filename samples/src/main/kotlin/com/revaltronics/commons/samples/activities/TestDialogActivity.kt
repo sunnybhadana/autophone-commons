@@ -26,6 +26,7 @@ import com.revaltronics.commons.compose.theme.AppThemeSurface
 import com.revaltronics.commons.dialogs.*
 import com.revaltronics.commons.extensions.*
 import com.revaltronics.commons.models.*
+import com.revaltronics.commons.R
 
 class TestDialogActivity : ComponentActivity() {
 

@@ -24,6 +24,7 @@ import com.revaltronics.commons.compose.theme.SimpleTheme
 import com.revaltronics.commons.extensions.fromHtml
 import com.revaltronics.commons.models.FAQItem
 import com.revaltronics.strings.R as stringsR
+import com.revaltronics.commons.R
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 
