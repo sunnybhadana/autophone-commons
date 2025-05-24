@@ -172,7 +172,7 @@ class PropertiesDialog : BasePropertiesDialog {
                 return
             }
 
-            if (mActivity.baseConfig.appId.removeSuffix(".debug") == "com.goodwy.filemanager") {
+            if (mActivity.baseConfig.appId.removeSuffix(".debug") == "com.revaltronics.filemanager") {
                 addProperty(R.string.md5, "…", R.id.properties_md5)
                 ensureBackgroundThread {
                     val md5 = if (mActivity.isRestrictedSAFOnlyRoot(path)) {

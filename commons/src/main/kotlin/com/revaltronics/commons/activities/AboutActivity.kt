@@ -130,13 +130,13 @@ class AboutActivity : BaseComposeActivity() {
     private fun onPrivacyPolicyClick() {
         val appId = baseConfig.appId.removeSuffix(".debug")
         val url = when (appId) {
-            "com.goodwy.dialer" -> "https://www.goodwy.dev/about/privacy-policy-right-dialer"
-            "com.goodwy.smsmessenger" -> "https://www.goodwy.dev/about/privacy-policy-right-messages"
-            "com.goodwy.contacts" -> "https://www.goodwy.dev/about/privacy-policy-right-contacts"
-            "com.goodwy.gallery" -> "https://www.goodwy.dev/about/privacy-policy-right-gallery"
-            "com.goodwy.filemanager" -> "https://www.goodwy.dev/about/privacy-policy-right-files"
-            "com.goodwy.voicerecorder", "com.goodwy.voicerecorderfree" -> "https://www.goodwy.dev/about/privacy-policy-right-voice-recorder"
-            "com.goodwy.calendar" -> "https://www.goodwy.dev/about/privacy-policy-right-calendar"
+            "com.revaltronics.dialer" -> "https://www.goodwy.dev/about/privacy-policy-right-dialer"
+            "com.revaltronics.smsmessenger" -> "https://www.goodwy.dev/about/privacy-policy-right-messages"
+            "com.revaltronics.contacts" -> "https://www.goodwy.dev/about/privacy-policy-right-contacts"
+            "com.revaltronics.gallery" -> "https://www.goodwy.dev/about/privacy-policy-right-gallery"
+            "com.revaltronics.filemanager" -> "https://www.goodwy.dev/about/privacy-policy-right-files"
+            "com.revaltronics.voicerecorder", "com.revaltronics.voicerecorderfree" -> "https://www.goodwy.dev/about/privacy-policy-right-voice-recorder"
+            "com.revaltronics.calendar" -> "https://www.goodwy.dev/about/privacy-policy-right-calendar"
             else -> "https://www.goodwy.dev/about/privacy-policy"
         }
         launchViewIntent(url)

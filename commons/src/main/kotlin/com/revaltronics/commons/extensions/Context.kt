@@ -290,7 +290,7 @@ fun Context.launchActivityIntent(intent: Intent) {
 
 fun Context.getFilePublicUri(file: File, applicationId: String): Uri {
     // for images/videos/gifs try getting a media content uri first, like content://media/external/images/media/438
-    // if media content uri is null, get our custom uri like content://com.goodwy.gallery.provider/external_files/emulated/0/DCIM/IMG_20171104_233915.jpg
+    // if media content uri is null, get our custom uri like content://com.revaltronics.gallery.provider/external_files/emulated/0/DCIM/IMG_20171104_233915.jpg
     var uri = if (file.isMediaFile()) {
         getMediaContentUri(file.absolutePath)
     } else {
@@ -507,9 +507,9 @@ fun Context.canAccessGlobalConfig(): Boolean {
 fun Context.isOrWasThankYouInstalled(): Boolean {
     return when {
         resources.getBoolean(R.bool.pretend_thank_you_installed) -> true
-        isPackageInstalled("com.goodwy.audiobook") -> true
-        isPackageInstalled("com.goodwy.voicerecorder") -> true
-        isPackageInstalled("com.goodwy.files") -> true
+        isPackageInstalled("com.revaltronics.audiobook") -> true
+        isPackageInstalled("com.revaltronics.voicerecorder") -> true
+        isPackageInstalled("com.revaltronics.files") -> true
         else -> false
     }
 }
@@ -760,7 +760,7 @@ fun Context.saveExifRotation(exif: ExifInterface, degrees: Int) {
 
 fun Context.getLaunchIntent() = packageManager.getLaunchIntentForPackage(baseConfig.appId)
 
-fun Context.getCanAppBeUpgraded() = proPackages.contains(baseConfig.appId.removeSuffix(".debug").removePrefix("com.goodwy."))
+fun Context.getCanAppBeUpgraded() = proPackages.contains(baseConfig.appId.removeSuffix(".debug").removePrefix("com.revaltronics."))
 
 fun Context.getProUrl() = "https://play.google.com/store/apps/details?id=${baseConfig.appId.removeSuffix(".debug")}.pro"
 
@@ -1063,9 +1063,9 @@ fun Context.isUsingGestureNavigation(): Boolean {
 
 // we need the Default Dialer functionality only in Simple Dialer and in Simple Contacts for now
 fun Context.isDefaultDialer(): Boolean {
-    return if (!packageName.startsWith("com.goodwy.contacts") && !packageName.startsWith("com.goodwy.dialer")) {
+    return if (!packageName.startsWith("com.revaltronics.contacts") && !packageName.startsWith("com.revaltronics.dialer")) {
         true
-    } else if ((packageName.startsWith("com.goodwy.contacts") || packageName.startsWith("com.goodwy.dialer")) && isQPlus()) {
+    } else if ((packageName.startsWith("com.revaltronics.contacts") || packageName.startsWith("com.revaltronics.dialer")) && isQPlus()) {
         val roleManager = getSystemService(RoleManager::class.java)
         roleManager!!.isRoleAvailable(RoleManager.ROLE_DIALER) && roleManager.isRoleHeld(RoleManager.ROLE_DIALER)
     } else {
@@ -1357,7 +1357,6 @@ fun Context.getRelationTypeText(type: Int, label: String): String {
     } else {
         getString(
             when (type) {
-                // Relation.TYPE_CUSTOM   -> com.goodwy.strings.R.string.custom
                 Relation.TYPE_ASSISTANT   -> com.revaltronics.strings.R.string.relation_assistant_g
                 Relation.TYPE_BROTHER     -> com.revaltronics.strings.R.string.relation_brother_g
                 Relation.TYPE_CHILD       -> com.revaltronics.strings.R.string.relation_child_g
@@ -1376,16 +1375,16 @@ fun Context.getRelationTypeText(type: Int, label: String): String {
                 // Relation types defined in vCard 4.0
                 ContactRelation.TYPE_CONTACT -> com.revaltronics.strings.R.string.relation_contact_g
                 ContactRelation.TYPE_ACQUAINTANCE -> com.revaltronics.strings.R.string.relation_acquaintance_g
-                // ContactRelation.TYPE_FRIEND -> com.goodwy.strings.R.string.relation_friend
+                // ContactRelation.TYPE_FRIEND -> com.revaltronics.strings.R.string.relation_friend
                 ContactRelation.TYPE_MET -> com.revaltronics.strings.R.string.relation_met_g
                 ContactRelation.TYPE_CO_WORKER -> com.revaltronics.strings.R.string.relation_co_worker_g
                 ContactRelation.TYPE_COLLEAGUE -> com.revaltronics.strings.R.string.relation_colleague_g
                 ContactRelation.TYPE_CO_RESIDENT -> com.revaltronics.strings.R.string.relation_co_resident_g
                 ContactRelation.TYPE_NEIGHBOR -> com.revaltronics.strings.R.string.relation_neighbor_g
-                // ContactRelation.TYPE_CHILD -> com.goodwy.strings.R.string.relation_child
-                // ContactRelation.TYPE_PARENT -> com.goodwy.strings.R.string.relation_parent
+                // ContactRelation.TYPE_CHILD -> com.revaltronics.strings.R.string.relation_child
+                // ContactRelation.TYPE_PARENT -> com.revaltronics.strings.R.string.relation_parent
                 ContactRelation.TYPE_SIBLING -> com.revaltronics.strings.R.string.relation_sibling_g
-                // ContactRelation.TYPE_SPOUSE -> com.goodwy.strings.R.string.relation_spouse
+                // ContactRelation.TYPE_SPOUSE -> com.revaltronics.strings.R.string.relation_spouse
                 ContactRelation.TYPE_KIN -> com.revaltronics.strings.R.string.relation_kin_g
                 ContactRelation.TYPE_MUSE -> com.revaltronics.strings.R.string.relation_muse_g
                 ContactRelation.TYPE_CRUSH -> com.revaltronics.strings.R.string.relation_crush_g
@@ -1516,15 +1515,15 @@ fun Context.isPro() = baseConfig.isPro || baseConfig.isProSubs || baseConfig.isP
     (resources.getBoolean(R.bool.using_no_gp) && baseConfig.isProNoGP)
 
 fun Context.isCollection(): Boolean {
-    return isPackageInstalled("com.goodwy.dialer")
-        && isPackageInstalled("com.goodwy.contacts")
-        && isPackageInstalled("com.goodwy.smsmessenger")
-        && isPackageInstalled("com.goodwy.gallery")
-        && isPackageInstalled("com.goodwy.audiobooklite")
-        && isPackageInstalled("com.goodwy.filemanager")
-        && isPackageInstalled("com.goodwy.keyboard")
-        && isPackageInstalled("com.goodwy.calendar")
-        && isPackageInstalled("com.goodwy.voicerecorderfree")
+    return isPackageInstalled("com.revaltronics.dialer")
+        && isPackageInstalled("com.revaltronics.contacts")
+        && isPackageInstalled("com.revaltronics.smsmessenger")
+        && isPackageInstalled("com.revaltronics.gallery")
+        && isPackageInstalled("com.revaltronics.audiobooklite")
+        && isPackageInstalled("com.revaltronics.filemanager")
+        && isPackageInstalled("com.revaltronics.keyboard")
+        && isPackageInstalled("com.revaltronics.calendar")
+        && isPackageInstalled("com.revaltronics.voicerecorderfree")
 }
 
 fun Context.isTalkBackOn(): Boolean {

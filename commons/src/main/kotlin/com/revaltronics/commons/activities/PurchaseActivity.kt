@@ -577,15 +577,15 @@ class PurchaseActivity : BaseSimpleActivity() {
     @SuppressLint("NewApi", "SetTextI18n", "UseCompatTextViewDrawableApis")
     private fun setupCollection() {
         binding.collectionHolder.beVisible()
-        val appDialerPackage = "com.goodwy.dialer"
-        val appContactsPackage = "com.goodwy.contacts"
-        val appSmsMessengerPackage = "com.goodwy.smsmessenger"
-        val appGalleryPackage = "com.goodwy.gallery"
-        val appAudiobookLitePackage = "com.goodwy.audiobooklite"
-        val appFilesPackage = "com.goodwy.filemanager"
-        val appKeyboardPackage = "com.goodwy.keyboard"
-        val appCalendarPackage = "com.goodwy.calendar"
-        val appVoiceRecorderPackage = "com.goodwy.voicerecorderfree"
+        val appDialerPackage = "com.revaltronics.dialer"
+        val appContactsPackage = "com.revaltronics.contacts"
+        val appSmsMessengerPackage = "com.revaltronics.smsmessenger"
+        val appGalleryPackage = "com.revaltronics.gallery"
+        val appAudiobookLitePackage = "com.revaltronics.audiobooklite"
+        val appFilesPackage = "com.revaltronics.filemanager"
+        val appKeyboardPackage = "com.revaltronics.keyboard"
+        val appCalendarPackage = "com.revaltronics.calendar"
+        val appVoiceRecorderPackage = "com.revaltronics.voicerecorderfree"
 
         val appDialerInstalled = isPackageInstalled(appDialerPackage)
         val appContactsInstalled = isPackageInstalled(appContactsPackage)

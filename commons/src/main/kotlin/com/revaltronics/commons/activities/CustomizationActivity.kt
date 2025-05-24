@@ -736,7 +736,7 @@ class CustomizationActivity : BaseSimpleActivity() {
     }
 
     private fun pickPrimaryColor() {
-        if (!packageName.startsWith("com.goodwy.", true) && baseConfig.appRunCount > 50) {
+        if (!packageName.startsWith("com.revaltronics.", true) && baseConfig.appRunCount > 50) {
             finish()
             return
         }

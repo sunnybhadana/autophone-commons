@@ -109,7 +109,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
         }
 
         super.onCreate(savedInstanceState)
-        if (!packageName.startsWith("com.goodwy.", true)) {
+        if (!packageName.startsWith("com.revaltronics.", true)) {
             if ((0..50).random() == 10 || baseConfig.appRunCount % 100 == 0) {
                 val label = "You are using a fake version of the app. For your own safety download the original one from play.google.com. Thanks"
                 ConfirmationDialog(
@@ -725,7 +725,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
             putExtra(APP_PACKAGE_NAME, baseConfig.appId)
             putExtra(APP_FAQ, faqItems)
             putExtra(SHOW_FAQ_BEFORE_MAIL, showFAQBeforeMail)
-            //Goodwy
+            //Revaltronics
             putExtra(PRODUCT_ID_LIST, productIdList)
             putExtra(PRODUCT_ID_LIST_RU, productIdListRu)
             putExtra(SUBSCRIPTION_ID_LIST, subscriptionIdList)
@@ -827,7 +827,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
     // synchronous return value determines only if we are showing the SAF dialog, callback result tells if the SD or OTG permission has been granted
     fun handleSAFDialog(path: String, callback: (success: Boolean) -> Unit): Boolean {
         hideKeyboard()
-        return if (!packageName.startsWith("com.goodwy")) {
+        return if (!packageName.startsWith("com.revaltronics")) {
             callback(true)
             false
         } else if (isShowingSAFDialog(path) || isShowingOTGDialog(path)) {
@@ -841,7 +841,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
 
     fun handleSAFDialogSdk30(path: String, showRationale: Boolean = true, callback: (success: Boolean) -> Unit): Boolean {
         hideKeyboard()
-        return if (!packageName.startsWith("com.goodwy")) {
+        return if (!packageName.startsWith("com.revaltronics")) {
             callback(true)
             false
         } else if (isShowingSAFDialogSdk30(path, showRationale)) {
@@ -865,7 +865,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
 
     fun handleSAFCreateDocumentDialogSdk30(path: String, callback: (success: Boolean) -> Unit): Boolean {
         hideKeyboard()
-        return if (!packageName.startsWith("com.goodwy")) {
+        return if (!packageName.startsWith("com.revaltronics")) {
             callback(true)
             false
         } else if (isShowingSAFCreateDocumentDialogSdk30(path)) {
@@ -879,7 +879,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
 
     fun handleAndroidSAFDialog(path: String, callback: (success: Boolean) -> Unit): Boolean {
         hideKeyboard()
-        return if (!packageName.startsWith("com.goodwy")) {
+        return if (!packageName.startsWith("com.revaltronics")) {
             callback(true)
             false
         } else if (isShowingAndroidSAFDialog(path)) {
