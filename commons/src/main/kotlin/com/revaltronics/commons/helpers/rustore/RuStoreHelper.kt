@@ -2,6 +2,7 @@ package com.revaltronics.commons.helpers.rustore
 
 import android.content.Context
 import android.util.Log
+import com.revaltronics.commons.extensions.baseConfig
 import com.revaltronics.commons.helpers.rustore.model.*
 import com.revaltronics.strings.R as stringsR
 import kotlinx.coroutines.*
@@ -89,9 +90,6 @@ class RuStoreHelper {
         // Immediately set products as loaded and purchased without actually fetching from RuStore
         _stateBilling.value = _stateBilling.value.copy(isLoading = false)
         _statePurchased.value = _statePurchased.value.copy(isLoading = false, purchases = listOf())
-        
-        // Set the pro flag to true
-        RuStoreModule.provideApplicationContext().baseConfig.isProRuStore = true
         
         // Still run the original code for compatibility, but don't depend on its results
         CoroutineScope(Dispatchers.Main).launch {
