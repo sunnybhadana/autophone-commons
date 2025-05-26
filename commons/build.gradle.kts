@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "com.revaltronics"
-version = "6.1.1"
+version = "1.0.1"
 
 android {
     namespace = "com.revaltronics.commons"
