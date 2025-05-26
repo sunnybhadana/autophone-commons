@@ -549,8 +549,8 @@ fun BaseSimpleActivity.launchCallIntent(recipient: String, handle: PhoneAccountH
             putExtra(IS_RIGHT_APP, key)
 
             if (isDefaultDialer()) {
-                val packageName = if (baseConfig.appId.contains(".debug", true)) "com.revaltronics.dialer.debug" else "com.revaltronics.dialer"
-                val className = "com.revaltronics.dialer.activities.DialerActivity"
+                val packageName = if (baseConfig.appId.contains(".debug", true)) "com.revaltronics.autophone.debug" else "com.revaltronics.autophone"
+                val className = "com.revaltronics.autophone.activities.DialerActivity"
                 setClassName(packageName, className)
             }
 

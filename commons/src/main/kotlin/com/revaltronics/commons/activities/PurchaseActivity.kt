@@ -577,7 +577,7 @@ class PurchaseActivity : BaseSimpleActivity() {
     @SuppressLint("NewApi", "SetTextI18n", "UseCompatTextViewDrawableApis")
     private fun setupCollection() {
         binding.collectionHolder.beVisible()
-        val appDialerPackage = "com.revaltronics.dialer"
+        val appDialerPackage = "com.revaltronics.autophone"
         val appContactsPackage = "com.revaltronics.contacts"
         val appSmsMessengerPackage = "com.revaltronics.smsmessenger"
         val appGalleryPackage = "com.revaltronics.gallery"

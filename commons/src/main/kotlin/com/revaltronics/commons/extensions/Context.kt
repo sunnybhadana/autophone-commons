@@ -1063,9 +1063,9 @@ fun Context.isUsingGestureNavigation(): Boolean {
 
 // we need the Default Dialer functionality only in Simple Dialer and in Simple Contacts for now
 fun Context.isDefaultDialer(): Boolean {
-    return if (!packageName.startsWith("com.revaltronics.contacts") && !packageName.startsWith("com.revaltronics.dialer")) {
+    return if (!packageName.startsWith("com.revaltronics.contacts") && !packageName.startsWith("com.revaltronics.autophone")) {
         true
-    } else if ((packageName.startsWith("com.revaltronics.contacts") || packageName.startsWith("com.revaltronics.dialer")) && isQPlus()) {
+    } else if ((packageName.startsWith("com.revaltronics.contacts") || packageName.startsWith("com.revaltronics.autophone")) && isQPlus()) {
         val roleManager = getSystemService(RoleManager::class.java)
         roleManager!!.isRoleAvailable(RoleManager.ROLE_DIALER) && roleManager.isRoleHeld(RoleManager.ROLE_DIALER)
     } else {
@@ -1515,7 +1515,7 @@ fun Context.isPro() = baseConfig.isPro || baseConfig.isProSubs || baseConfig.isP
     (resources.getBoolean(R.bool.using_no_gp) && baseConfig.isProNoGP)
 
 fun Context.isCollection(): Boolean {
-    return isPackageInstalled("com.revaltronics.dialer")
+    return isPackageInstalled("com.revaltronics.autophone")
         && isPackageInstalled("com.revaltronics.contacts")
         && isPackageInstalled("com.revaltronics.smsmessenger")
         && isPackageInstalled("com.revaltronics.gallery")

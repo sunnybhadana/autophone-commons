@@ -89,7 +89,7 @@ class ManageBlockedNumbersActivity : BaseSimpleActivity() {
             val isTopAppBarColorIcon by config.isTopAppBarColorIcon.collectAsStateWithLifecycle(initialValue = config.topAppBarColorIcon)
             val isTopAppBarColorTitle by config.isTopAppBarColorTitle.collectAsStateWithLifecycle(initialValue = config.topAppBarColorTitle)
             val isDialer = remember {
-                config.appId.startsWith("com.revaltronics.dialer")
+                config.appId.startsWith("com.revaltronics.autophone")
             }
             val isDefaultDialer: Boolean = onEventValue {
                 context.isDefaultDialer()
@@ -224,7 +224,7 @@ class ManageBlockedNumbersActivity : BaseSimpleActivity() {
     }
 
     private fun maybeSetDefaultCallerIdApp() {
-        if (isQPlus() && baseConfig.appId.startsWith("com.revaltronics.dialer")) {
+        if (isQPlus() && baseConfig.appId.startsWith("com.revaltronics.autophone")) {
             setDefaultCallerIdApp()
         }
     }

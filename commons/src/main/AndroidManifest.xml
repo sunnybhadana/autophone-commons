@@ -7,8 +7,8 @@
         <package android:name="revaltronics.audiobook" />
         <package android:name="revaltronics.files.debug" />
         <package android:name="revaltronics.files" />
-        <package android:name="revaltronics.dialer.debug" />
-        <package android:name="revaltronics.dialer" />
+        <package android:name="revaltronics.autophone.debug" />
+        <package android:name="revaltronics.autophone" />
         <package android:name="revaltronics.contacts.debug" />
         <package android:name="revaltronics.contacts" />
         <package android:name="revaltronics.smsmessenger.debug" />

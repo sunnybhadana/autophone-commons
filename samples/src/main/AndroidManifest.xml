@@ -5,8 +5,8 @@
     <uses-permission android:name="com.android.vending.BILLING" />
 
     <queries>
-        <package android:name="com.revaltronics.dialer.debug" />
-        <package android:name="com.revaltronics.dialer" />
+        <package android:name="com.revaltronics.autophone.debug" />
+        <package android:name="com.revaltronics.autophone" />
         <package android:name="com.revaltronics.contacts.debug" />
         <package android:name="com.revaltronics.contacts" />
         <package android:name="com.revaltronics.smsmessenger.debug" />

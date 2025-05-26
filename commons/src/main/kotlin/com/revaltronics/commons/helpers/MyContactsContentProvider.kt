@@ -32,7 +32,7 @@ class MyContactsContentProvider {
         fun getSimpleContacts(context: Context, cursor: Cursor?): ArrayList<SimpleContact> {
             val contacts = ArrayList<SimpleContact>()
             val packageName = context.packageName.removeSuffix(".debug")
-            if (packageName != "com.revaltronics.dialer" && packageName != "com.revaltronics.smsmessenger" && packageName != "com.revaltronics.calendar") {
+            if (packageName != "com.revaltronics.autophone" && packageName != "com.revaltronics.smsmessenger" && packageName != "com.revaltronics.calendar") {
                 return contacts
             }
 
@@ -70,8 +70,8 @@ class MyContactsContentProvider {
         fun getContacts(context: Context, cursor: Cursor?): ArrayList<Contact> {
             val contacts = ArrayList<Contact>()
             val packageName = context.packageName.removeSuffix(".debug")
-            if (packageName != "com.revaltronics.dialer" && packageName != "com.revaltronics.smsmessenger" && packageName != "com.revaltronics.calendar"
-                && packageName != "com.revaltronics.dialer.debug" && packageName != "com.revaltronics.smsmessenger.debug" && packageName != "com.revaltronics.calendar.debug") {
+            if (packageName != "com.revaltronics.autophone" && packageName != "com.revaltronics.smsmessenger" && packageName != "com.revaltronics.calendar"
+                && packageName != "com.revaltronics.autophone.debug" && packageName != "com.revaltronics.smsmessenger.debug" && packageName != "com.revaltronics.calendar.debug") {
                 return contacts
             }
 
