@@ -71,6 +71,12 @@ class PurchaseActivity : BaseSimpleActivity() {
         subscriptionIdListRu = intent.getStringArrayListExtra(SUBSCRIPTION_ID_LIST_RU) ?: arrayListOf("", "", "")
         subscriptionYearIdList = intent.getStringArrayListExtra(SUBSCRIPTION_YEAR_ID_LIST) ?: arrayListOf("", "", "")
         subscriptionYearIdListRu = intent.getStringArrayListExtra(SUBSCRIPTION_YEAR_ID_LIST_RU) ?: arrayListOf("", "", "")
+        
+        // Set all pro flags to true
+        baseConfig.isPro = true
+        baseConfig.isProSubs = true
+        baseConfig.isProRuStore = true
+        baseConfig.isProNoGP = true
         primaryColor = getProperPrimaryColor()
         showLifebuoy = intent.getBooleanExtra(SHOW_LIFEBUOY, true)
         playStoreInstalled = intent.getBooleanExtra(PLAY_STORE_INSTALLED, true)

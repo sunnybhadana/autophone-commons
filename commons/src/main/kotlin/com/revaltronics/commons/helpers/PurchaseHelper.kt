@@ -143,12 +143,47 @@ class PurchaseHelper (
     fun initBillingClient() {
         billingClient = BillingClient.newBuilder(activity)
             .setListener(purchasesUpdatedListener).enablePendingPurchases().build()
+        
+        // Set all pro flags to true to make all premium features free
+        activity.baseConfig.isPro = true
+        activity.baseConfig.isProSubs = true
+        activity.baseConfig.isProRuStore = true
+        activity.baseConfig.isProNoGP = true
+        
+        // Notify observers that purchase status is successful
+        isIapPurchased.postValue(Tipping.Succeeded)
+        isSupPurchased.postValue(Tipping.Succeeded)
     }
 
     fun retrieveDonation(iaps: ArrayList<String>, subs: ArrayList<String>) {
         iapSkuDetails.clear()
         subSkuDetails.clear()
-
+        
+        // Simulate successful purchases without actually connecting to billing
+        iapList = iaps
+        subList = subs
+        
+        // Set all products as "purchased"
+        iaps.forEach { 
+            iapPurchased.add(it) 
+        }
+        subs.forEach { 
+            subPurchased.add(it)
+        }
+        
+        // Notify observers
+        isIapPurchased.postValue(Tipping.Succeeded)
+        isIapPurchasedList.postValue(iapPurchased)
+        isSupPurchased.postValue(Tipping.Succeeded)
+        isSupPurchasedList.postValue(subPurchased)
+        
+        // Set flags in global config
+        activity.baseConfig.isPro = true
+        activity.baseConfig.isProSubs = true
+        activity.baseConfig.isProRuStore = true
+        activity.baseConfig.isProNoGP = true
+        
+        // We'll still initialize the billing client for compatibility but won't depend on its results
         billingClient.startConnection(object : BillingClientStateListener {
             override fun onBillingServiceDisconnected() {
                 billingClient.endConnection()
@@ -271,11 +306,11 @@ class PurchaseHelper (
     }
 
     fun isIapPurchased(product: String): Boolean {
-        return iapPurchased.contains(product)
+        return true  // Always return true to unlock all premium features
     }
 
     fun isSubPurchased(product: String): Boolean {
-        return subPurchased.contains(product)
+        return true  // Always return true to unlock all premium features
     }
 }
 

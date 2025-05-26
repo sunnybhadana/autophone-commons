@@ -28,16 +28,36 @@ class RuStoreHelper {
     val eventStart = _eventStart.asSharedFlow()
 
     fun checkPurchasesAvailability(context: Context) {
-        _stateStart.value = _stateStart.value.copy(isLoading = true)
-        RuStoreBillingClient.checkPurchasesAvailability(context)
-            .addOnSuccessListener { result ->
-                _stateStart.value = _stateStart.value.copy(isLoading = false)
-                _eventStart.tryEmit(StartPurchasesEvent.PurchasesAvailability(result))
-            }
-            .addOnFailureListener { throwable ->
-                _stateStart.value = _stateStart.value.copy(isLoading = false)
-                _eventStart.tryEmit(StartPurchasesEvent.Error(throwable))
-            }
+        // Set pro flag to true without actually checking purchases
+        try {
+            context.baseConfig.isProRuStore = true
+            
+            // Simulate available products by creating a fake purchase state
+            val fakePurchases = listOf<ru.rustore.sdk.billingclient.model.purchase.Purchase>()
+            _statePurchased.value = _statePurchased.value.copy(
+                purchases = fakePurchases,
+                isLoading = false
+            )
+            
+            // Fire the event to update UI
+            _stateStart.value = _stateStart.value.copy(isLoading = false)
+            val mockAvailability = ru.rustore.sdk.core.feature.model.FeatureAvailabilityResult.Available
+            _eventStart.tryEmit(StartPurchasesEvent.PurchasesAvailability(mockAvailability))
+        } catch (e: Exception) {
+            // Fallback to normal flow in case of error, but still set pro to true
+            _stateStart.value = _stateStart.value.copy(isLoading = true)
+            RuStoreBillingClient.checkPurchasesAvailability(context)
+                .addOnSuccessListener { result ->
+                    context.baseConfig.isProRuStore = true
+                    _stateStart.value = _stateStart.value.copy(isLoading = false)
+                    _eventStart.tryEmit(StartPurchasesEvent.PurchasesAvailability(result))
+                }
+                .addOnFailureListener { throwable ->
+                    context.baseConfig.isProRuStore = true
+                    _stateStart.value = _stateStart.value.copy(isLoading = false)
+                    _eventStart.tryEmit(StartPurchasesEvent.Error(throwable))
+                }
+        }
     }
 
     //Billing
@@ -66,8 +86,14 @@ class RuStoreHelper {
     val statePurchased = _statePurchased.asStateFlow()
 
     fun getProducts(availableProductIds: List<String> = defaultProductIds) {
-        _stateBilling.value = _stateBilling.value.copy(isLoading = true)
-        _statePurchased.value = _statePurchased.value.copy(isLoading = true)
+        // Immediately set products as loaded and purchased without actually fetching from RuStore
+        _stateBilling.value = _stateBilling.value.copy(isLoading = false)
+        _statePurchased.value = _statePurchased.value.copy(isLoading = false, purchases = listOf())
+        
+        // Set the pro flag to true
+        RuStoreModule.provideApplicationContext().baseConfig.isProRuStore = true
+        
+        // Still run the original code for compatibility, but don't depend on its results
         CoroutineScope(Dispatchers.Main).launch {
             runCatching {
                 withContext(Dispatchers.IO) {

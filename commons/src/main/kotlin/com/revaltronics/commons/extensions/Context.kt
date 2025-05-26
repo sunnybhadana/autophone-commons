@@ -1511,8 +1511,7 @@ fun Context.isRuStoreInstalled(): Boolean {
     return isPackageInstalled("ru.vk.store")
 }
 
-fun Context.isPro() = baseConfig.isPro || baseConfig.isProSubs || baseConfig.isProRuStore ||
-    (resources.getBoolean(R.bool.using_no_gp) && baseConfig.isProNoGP)
+fun Context.isPro() = true  // All premium features are free
 
 fun Context.isCollection(): Boolean {
     return isPackageInstalled("com.revaltronics.autophone")
