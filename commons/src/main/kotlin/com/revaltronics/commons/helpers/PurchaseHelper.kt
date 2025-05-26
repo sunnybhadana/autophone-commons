@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import com.android.billingclient.api.*
 import com.android.billingclient.api.BillingFlowParams.ProductDetailsParams
 import com.android.billingclient.api.QueryProductDetailsParams.Product
+import com.revaltronics.commons.extensions.baseConfig
 import com.revaltronics.commons.extensions.toast
 import com.revaltronics.strings.R as stringsR
 import kotlinx.coroutines.*
