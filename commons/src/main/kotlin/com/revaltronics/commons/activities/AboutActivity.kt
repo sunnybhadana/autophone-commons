@@ -130,14 +130,14 @@ class AboutActivity : BaseComposeActivity() {
     private fun onPrivacyPolicyClick() {
         val appId = baseConfig.appId.removeSuffix(".debug")
         val url = when (appId) {
-            "com.revaltronics.autophone" -> "https://www.goodwy.dev/about/privacy-policy-right-dialer"
-            "com.revaltronics.smsmessenger" -> "https://www.goodwy.dev/about/privacy-policy-right-messages"
-            "com.revaltronics.contacts" -> "https://www.goodwy.dev/about/privacy-policy-right-contacts"
-            "com.revaltronics.gallery" -> "https://www.goodwy.dev/about/privacy-policy-right-gallery"
-            "com.revaltronics.filemanager" -> "https://www.goodwy.dev/about/privacy-policy-right-files"
-            "com.revaltronics.voicerecorder", "com.revaltronics.voicerecorderfree" -> "https://www.goodwy.dev/about/privacy-policy-right-voice-recorder"
-            "com.revaltronics.calendar" -> "https://www.goodwy.dev/about/privacy-policy-right-calendar"
-            else -> "https://www.goodwy.dev/about/privacy-policy"
+            "com.revaltronics.autophone" -> "https://revaltronics.com/autophone/privacy-policy.html"
+            "com.revaltronics.smsmessenger" -> "https://revaltronics.com/autophone/privacy-policy.html"
+            "com.revaltronics.contacts" -> "https://revaltronics.com/autophone/privacy-policy.html"
+            "com.revaltronics.gallery" -> "https://revaltronics.com/autophone/privacy-policy.html"
+            "com.revaltronics.filemanager" -> "https://revaltronics.com/autophone/privacy-policy.html"
+            "com.revaltronics.voicerecorder", "com.revaltronics.voicerecorderfree" -> "https://revaltronics.com/autophone/privacy-policy.html"
+            "com.revaltronics.calendar" -> "https://revaltronics.com/autophone/privacy-policy.html"
+            else -> "https://revaltronics.com/autophone/privacy-policy.html"
         }
         launchViewIntent(url)
     }
@@ -163,7 +163,7 @@ class AboutActivity : BaseComposeActivity() {
 
     private fun onGithubClick() {
         val repositoryName = intent.getStringExtra(APP_REPOSITORY_NAME) ?: return
-        val url = "https://github.com/Goodwy/$repositoryName"
+        val url = "https://github.com/sunnybhadana/AutoPhone"
         launchViewIntent(url)
     }
 

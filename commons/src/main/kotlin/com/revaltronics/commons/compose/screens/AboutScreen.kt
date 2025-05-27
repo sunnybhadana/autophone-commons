@@ -171,44 +171,44 @@ internal fun AboutNewSection(
                 }
                 Spacer(modifier = Modifier.size(18.dp))
             }
-            Card(
-                shape = RoundedCornerShape(16.dp),
-                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
-                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
-            ) {
-                Row (
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .clickable(onClick = onMoreAppsClick),
-                    verticalAlignment = Alignment.CenterVertically,
-                ) {
-                    Text(modifier = Modifier
-                        .padding(start = 16.dp, end = 8.dp)
-                        .weight(1f),
-                        text = stringResource(R.string.more_apps_from_us).toUpperCase(LocaleList.current),
-                        fontSize = 14.sp,
-                        lineHeight = 18.sp,
-                        color = textColor,)
-                    Box (modifier = Modifier
-                        .padding(end = 8.dp, top = 8.dp, bottom = 8.dp)
-                        .width(42.dp)) {
-                        Icon(modifier = Modifier.alpha(0.2f).size(42.dp),
-                            imageVector = Icons.Rounded.Circle, contentDescription = stringResource(id = R.string.more_apps_from_us), tint = textColor)
-                        if (ruStoreInstalled && !context.baseConfig.useGooglePlay) {
-                            Icon(modifier = Modifier
-                                .size(42.dp)
-                                .padding(9.dp),
-                                painter = painterResource(id = R.drawable.ic_rustore),
-                                contentDescription = stringResource(id = R.string.more_apps_from_us), tint = textColor)
-                        }
-                        else {
-                            Icon(modifier = Modifier.size(42.dp).padding(start = 10.dp, end = 6.dp, top = 8.dp, bottom = 8.dp),
-                                painter = painterResource(id = R.drawable.ic_google_play_vector),
-                                contentDescription = stringResource(id = R.string.more_apps_from_us), tint = textColor)
-                        }
-                    }
-                }
-            }
+//            Card(
+//                shape = RoundedCornerShape(16.dp),
+//                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
+//                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+//            ) {
+//                Row (
+//                    modifier = Modifier
+//                        .fillMaxSize()
+//                        .clickable(onClick = onMoreAppsClick),
+//                    verticalAlignment = Alignment.CenterVertically,
+//                ) {
+//                    Text(modifier = Modifier
+//                        .padding(start = 16.dp, end = 8.dp)
+//                        .weight(1f),
+//                        text = stringResource(R.string.more_apps_from_us).toUpperCase(LocaleList.current),
+//                        fontSize = 14.sp,
+//                        lineHeight = 18.sp,
+//                        color = textColor,)
+//                    Box (modifier = Modifier
+//                        .padding(end = 8.dp, top = 8.dp, bottom = 8.dp)
+//                        .width(42.dp)) {
+//                        Icon(modifier = Modifier.alpha(0.2f).size(42.dp),
+//                            imageVector = Icons.Rounded.Circle, contentDescription = stringResource(id = R.string.more_apps_from_us), tint = textColor)
+//                        if (ruStoreInstalled && !context.baseConfig.useGooglePlay) {
+//                            Icon(modifier = Modifier
+//                                .size(42.dp)
+//                                .padding(9.dp),
+//                                painter = painterResource(id = R.drawable.ic_rustore),
+//                                contentDescription = stringResource(id = R.string.more_apps_from_us), tint = textColor)
+//                        }
+//                        else {
+//                            Icon(modifier = Modifier.size(42.dp).padding(start = 10.dp, end = 6.dp, top = 8.dp, bottom = 8.dp),
+//                                painter = painterResource(id = R.drawable.ic_google_play_vector),
+//                                contentDescription = stringResource(id = R.string.more_apps_from_us), tint = textColor)
+//                        }
+//                    }
+//                }
+//            }
             Spacer(modifier = Modifier.size(18.dp))
             Card(
                 shape = RoundedCornerShape(16.dp),
@@ -279,35 +279,35 @@ internal fun AboutNewSection(
                     }
                 }
             }
-            Spacer(modifier = Modifier.size(18.dp))
-            Card(
-                shape = RoundedCornerShape(16.dp),
-                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
-                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
-            ) {
-                Row (
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .clickable(onClick = onTipJarClick),
-                    verticalAlignment = Alignment.CenterVertically,
-                ) {
-                    Text(modifier = Modifier
-                        .padding(start = 16.dp, end = 8.dp)
-                        .weight(1f),
-                        text = stringResource(stringsR.string.tip_jar).toUpperCase(LocaleList.current),
-                        fontSize = 14.sp,
-                        lineHeight = 18.sp,
-                        color = textColor,)
-                    Box (modifier = Modifier
-                        .padding(end = 8.dp, top = 8.dp, bottom = 8.dp)
-                        .width(42.dp)) {
-                        Icon(modifier = Modifier.alpha(0.2f).size(42.dp),
-                            imageVector = Icons.Rounded.Circle, contentDescription = stringResource(id = stringsR.string.tip_jar), tint = textColor)
-                        Icon(modifier = Modifier.size(42.dp).padding(8.dp),
-                            imageVector = Icons.Rounded.Savings, contentDescription = stringResource(id = stringsR.string.tip_jar), tint = textColor)
-                    }
-                }
-            }
+//            Spacer(modifier = Modifier.size(18.dp))
+//            Card(
+//                shape = RoundedCornerShape(16.dp),
+//                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
+//                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+//            ) {
+//                Row (
+//                    modifier = Modifier
+//                        .fillMaxSize()
+//                        .clickable(onClick = onTipJarClick),
+//                    verticalAlignment = Alignment.CenterVertically,
+//                ) {
+//                    Text(modifier = Modifier
+//                        .padding(start = 16.dp, end = 8.dp)
+//                        .weight(1f),
+//                        text = stringResource(stringsR.string.tip_jar).toUpperCase(LocaleList.current),
+//                        fontSize = 14.sp,
+//                        lineHeight = 18.sp,
+//                        color = textColor,)
+//                    Box (modifier = Modifier
+//                        .padding(end = 8.dp, top = 8.dp, bottom = 8.dp)
+//                        .width(42.dp)) {
+//                        Icon(modifier = Modifier.alpha(0.2f).size(42.dp),
+//                            imageVector = Icons.Rounded.Circle, contentDescription = stringResource(id = stringsR.string.tip_jar), tint = textColor)
+//                        Icon(modifier = Modifier.size(42.dp).padding(8.dp),
+//                            imageVector = Icons.Rounded.Savings, contentDescription = stringResource(id = stringsR.string.tip_jar), tint = textColor)
+//                    }
+//                }
+//            }
             if (showGithub) {
                 Spacer(modifier = Modifier.size(18.dp))
                 Card(
