@@ -47,4 +47,4 @@ Licensed under the Apache License 2.0 - see [LICENSE](LICENSE) for details.
 
 ---
 
-*Based on [Simple-Commons](https://github.com/SimpleMobileTools/Simple-Commons)*
+*Based on [Simple-Commons](https://github.com/SimpleMobileTools/Simple-Commons) and [Goodwy-Commons](https://github.com/Goodwy/Goodwy-Commons)*
