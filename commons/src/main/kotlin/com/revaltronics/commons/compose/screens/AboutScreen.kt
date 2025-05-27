@@ -110,13 +110,13 @@ internal fun AboutNewSection(
                             modifier = Modifier
                                 .size(68.dp)
                                 .shadow(elevation = 10.dp, shape = RoundedCornerShape(34.dp), clip = true),
-                            painter = painterResource(id = R.drawable.ic_launcher),
+                            painter = painterResource(id = R.drawable.ic_new_launcher),
                             contentDescription = null,
                         )
                         Icon(
                             modifier = Modifier
                                 .size(72.dp),
-                            painter = painterResource(id = R.drawable.ic_launcher),
+                            painter = painterResource(id = R.drawable.ic_new_launcher),
                             contentDescription = appName,
                             tint = Color.Unspecified
                         )
@@ -209,7 +209,7 @@ internal fun AboutNewSection(
 //                    }
 //                }
 //            }
-            Spacer(modifier = Modifier.size(18.dp))
+//            Spacer(modifier = Modifier.size(18.dp))
             Card(
                 shape = RoundedCornerShape(16.dp),
                 colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
@@ -279,35 +279,36 @@ internal fun AboutNewSection(
                     }
                 }
             }
-//            Spacer(modifier = Modifier.size(18.dp))
-//            Card(
-//                shape = RoundedCornerShape(16.dp),
-//                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
-//                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
-//            ) {
-//                Row (
-//                    modifier = Modifier
-//                        .fillMaxSize()
-//                        .clickable(onClick = onTipJarClick),
-//                    verticalAlignment = Alignment.CenterVertically,
-//                ) {
-//                    Text(modifier = Modifier
-//                        .padding(start = 16.dp, end = 8.dp)
-//                        .weight(1f),
-//                        text = stringResource(stringsR.string.tip_jar).toUpperCase(LocaleList.current),
-//                        fontSize = 14.sp,
-//                        lineHeight = 18.sp,
-//                        color = textColor,)
-//                    Box (modifier = Modifier
-//                        .padding(end = 8.dp, top = 8.dp, bottom = 8.dp)
-//                        .width(42.dp)) {
-//                        Icon(modifier = Modifier.alpha(0.2f).size(42.dp),
-//                            imageVector = Icons.Rounded.Circle, contentDescription = stringResource(id = stringsR.string.tip_jar), tint = textColor)
-//                        Icon(modifier = Modifier.size(42.dp).padding(8.dp),
-//                            imageVector = Icons.Rounded.Savings, contentDescription = stringResource(id = stringsR.string.tip_jar), tint = textColor)
-//                    }
-//                }
-//            }
+            Spacer(modifier = Modifier.size(18.dp))
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
+                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+            ) {
+                Row (
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .clickable(onClick = onTipJarClick),
+                    verticalAlignment = Alignment.CenterVertically,
+                ) {
+                    Text(modifier = Modifier
+                        .padding(start = 16.dp, end = 8.dp)
+                        .weight(1f),
+                        text = stringResource(stringsR.string.tip_jar).toUpperCase(LocaleList.current),
+                        fontSize = 14.sp,
+                        lineHeight = 18.sp,
+                        color = textColor,)
+                    Box (modifier = Modifier
+                        .padding(end = 8.dp, top = 8.dp, bottom = 8.dp)
+                        .width(42.dp)) {
+                        Icon(modifier = Modifier.alpha(0.2f).size(42.dp),
+                            imageVector = Icons.Rounded.Circle, contentDescription = stringResource(id = stringsR.string.tip_jar), tint = textColor)
+                        // Using the Bitcoin icon as it's commonly recognized for cryptocurrency
+                        Icon(modifier = Modifier.size(42.dp).padding(8.dp),
+                            imageVector = Icons.Rounded.CurrencyBitcoin, contentDescription = stringResource(id = stringsR.string.tip_jar), tint = Color(0xFFF3BA2F)) // Binance gold color
+                    }
+                }
+            }
             if (showGithub) {
                 Spacer(modifier = Modifier.size(18.dp))
                 Card(

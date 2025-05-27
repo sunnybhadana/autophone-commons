@@ -1,15 +1,22 @@
 package com.revaltronics.commons.activities
 
+import android.app.AlertDialog
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import android.content.Intent
 import android.content.Intent.*
 import android.content.res.Configuration
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.revaltronics.commons.R
+import com.revaltronics.commons.extensions.toast
+import com.revaltronics.strings.R as stringsR
 import com.revaltronics.commons.compose.alert_dialog.rememberAlertDialogState
 import com.revaltronics.commons.compose.extensions.config
 import com.revaltronics.commons.compose.extensions.enableEdgeToEdgeSimple
@@ -143,6 +150,30 @@ class AboutActivity : BaseComposeActivity() {
     }
 
     private fun onTipJarClick() {
+        // Show a dialog with the Binance QR code for tipping with cryptocurrency
+        val dialogView = layoutInflater.inflate(R.layout.dialog_binance_qr, null)
+        val dialog = AlertDialog.Builder(this)
+            .setTitle(getString(stringsR.string.tip_jar))
+            .setView(dialogView)
+            .setPositiveButton(R.string.ok, null)
+            .create()
+            
+        // Set up the copy button functionality
+        dialogView.findViewById<Button>(R.id.btn_copy_wallet).setOnClickListener {
+            val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            val binanceUsername = "User-c80c0"
+            val clip = ClipData.newPlainText("Binance Username", binanceUsername)
+            clipboard.setPrimaryClip(clip)
+            toast(R.string.username_copied)
+            
+            // Consider using a snackbar instead of toast for better UX
+            // Snackbar.make(dialogView, R.string.address_copied, Snackbar.LENGTH_SHORT).show()
+        }
+        
+        dialog.show()
+        
+        // Keep the original implementation as a fallback or alternative option
+        /*
         Intent(applicationContext, PurchaseActivity::class.java).apply {
             putExtra(APP_ICON_IDS, intent.getIntegerArrayListExtra(APP_ICON_IDS) ?: ArrayList<String>())
             putExtra(APP_LAUNCHER_NAME, intent.getStringExtra(APP_LAUNCHER_NAME) ?: "")
@@ -159,6 +190,7 @@ class AboutActivity : BaseComposeActivity() {
             putExtra(SHOW_COLLECTION, resources.getBoolean(R.bool.show_collection))
             startActivity(this)
         }
+        */
     }
 
     private fun onGithubClick() {

@@ -640,7 +640,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/big_margin"
                 android:layout_marginBottom="48dp"
-                android:src="@drawable/logo_goodwy"/>
+                android:src="@drawable/ic_new_launcher"/>
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
 
