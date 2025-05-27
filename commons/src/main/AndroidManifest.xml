@@ -44,25 +44,25 @@
 
     <application android:supportsRtl="true">
         <activity
-            android:name="revaltronics.commons.activities.ContributorsActivity"
+            android:name="com.revaltronics.commons.activities.ContributorsActivity"
             android:configChanges="orientation|uiMode"
             android:exported="false"
             android:label="@string/contributors"
-            android:parentActivityName="revaltronics.commons.activities.AboutActivity" />
+            android:parentActivityName="com.revaltronics.commons.activities.AboutActivity" />
 
         <activity
-            android:name="revaltronics.commons.activities.FAQActivity"
+            android:name="com.revaltronics.commons.activities.FAQActivity"
             android:configChanges="orientation|uiMode"
             android:exported="false"
             android:label="@string/frequently_asked_questions"
-            android:parentActivityName="revaltronics.commons.activities.AboutActivity" />
+            android:parentActivityName="com.revaltronics.commons.activities.AboutActivity" />
 
         <activity
-            android:name="revaltronics.commons.activities.LicenseActivity"
+            android:name="com.revaltronics.commons.activities.LicenseActivity"
             android:configChanges="orientation|uiMode"
             android:exported="false"
             android:label="@string/third_party_licences"
-            android:parentActivityName="revaltronics.commons.activities.AboutActivity" />
+            android:parentActivityName="com.revaltronics.commons.activities.AboutActivity" />
 
         <activity
             android:name=".activities.ManageBlockedNumbersActivity"
