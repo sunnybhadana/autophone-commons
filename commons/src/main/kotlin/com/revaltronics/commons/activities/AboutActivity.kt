@@ -23,7 +23,9 @@ import com.revaltronics.commons.compose.extensions.enableEdgeToEdgeSimple
 import com.revaltronics.commons.compose.extensions.rateStarsRedirectAndThankYou
 import com.revaltronics.commons.compose.screens.*
 import com.revaltronics.commons.compose.theme.AppThemeSurface
+import com.revaltronics.commons.dialogs.AppSideloadedDialog
 import com.revaltronics.commons.dialogs.ConfirmationAdvancedAlertDialog
+import com.revaltronics.commons.dialogs.ConfirmationDialog
 import com.revaltronics.commons.dialogs.RateStarsAlertDialog
 import com.revaltronics.commons.extensions.*
 import com.revaltronics.commons.helpers.*
@@ -150,6 +152,29 @@ class AboutActivity : BaseComposeActivity() {
     }
 
     private fun onTipJarClick() {
+        // Check if app is installed from Play Store for security
+        if (isAppSideloaded()) {
+            // Show security warning dialog instead of QR code
+            AppSideloadedDialog(this) {
+                // User chose to close the dialog, no further action needed
+            }
+            return
+        }
+
+        // Additional check: ensure Play Store is installed (backup verification)
+        if (!isPlayStoreInstalled()) {
+            // Show error message if Play Store is not available
+            ConfirmationDialog(
+                activity = this,
+                message = getString(R.string.play_store_not_found_tip_jar),
+                positive = R.string.ok,
+                negative = 0
+            ) {
+                // User acknowledged, no further action needed
+            }
+            return
+        }
+
         // Show a dialog with the Binance QR code for tipping with cryptocurrency
         val dialogView = layoutInflater.inflate(R.layout.dialog_binance_qr, null)
         val dialog = AlertDialog.Builder(this)

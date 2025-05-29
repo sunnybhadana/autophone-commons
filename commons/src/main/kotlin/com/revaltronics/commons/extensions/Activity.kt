@@ -1626,8 +1626,31 @@ fun Activity.checkAppSideloading(): Boolean {
 
 fun Activity.isAppSideloaded(): Boolean {
     return try {
-        false
+        val packageManager = packageManager
+        val packageName = packageName
+        
+        // Get the installer package name
+        val installerPackageName = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+            packageManager.getInstallSourceInfo(packageName).installingPackageName
+        } else {
+            @Suppress("DEPRECATION")
+            packageManager.getInstallerPackageName(packageName)
+        }
+        
+        // Check if the app was installed from Google Play Store
+        val isFromPlayStore = installerPackageName == "com.android.vending"
+        
+        // Also check for other legitimate sources (like package installer for system updates)
+        val isFromPackageInstaller = installerPackageName == "com.google.android.packageinstaller" ||
+                installerPackageName == "com.android.packageinstaller"
+        
+        // If installer is null or not from known legitimate sources, it's sideloaded
+        // This includes ADB installations, APK files, and other unofficial sources
+        val isSideloaded = installerPackageName == null || (!isFromPlayStore && !isFromPackageInstaller)
+        
+        isSideloaded
     } catch (e: Exception) {
+        // If we can't determine the source, assume it's sideloaded for security
         true
     }
 }
