@@ -1,9 +1,14 @@
 package com.revaltronics.commons.samples.activities
 
 import android.app.DatePickerDialog
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.compose.setContent
+import androidx.appcompat.app.AlertDialog
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -14,8 +19,7 @@ import com.revaltronics.commons.compose.alert_dialog.AlertDialogState
 import com.revaltronics.commons.compose.alert_dialog.rememberAlertDialogState
 import com.revaltronics.commons.compose.extensions.*
 import com.revaltronics.commons.compose.theme.AppThemeSurface
-import com.revaltronics.commons.dialogs.RateStarsAlertDialog
-import com.revaltronics.commons.dialogs.SecurityDialog
+import com.revaltronics.commons.dialogs.*
 import com.revaltronics.commons.extensions.*
 import com.revaltronics.commons.helpers.LICENSE_AUTOFITTEXTVIEW
 import com.revaltronics.commons.helpers.SHOW_ALL_TABS
@@ -23,6 +27,7 @@ import com.revaltronics.commons.models.FAQItem
 import com.revaltronics.commons.samples.BuildConfig
 import com.revaltronics.commons.samples.R
 import com.revaltronics.commons.samples.screens.MainScreen
+import com.revaltronics.strings.R as stringsR
 
 class MainActivity : BaseSimpleActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -91,19 +96,52 @@ class MainActivity : BaseSimpleActivity() {
     }
 
     private fun launchPurchase() {
-        startPurchaseActivity(
-            R.string.app_name_g,
-            productIdList = arrayListOf("", "", ""),
-            productIdListRu = arrayListOf("", "", ""),
-            subscriptionIdList = arrayListOf("", "", ""),
-            subscriptionIdListRu = arrayListOf("", "", ""),
-            subscriptionYearIdList = arrayListOf("", "", ""),
-            subscriptionYearIdListRu = arrayListOf("", "", ""),
-            showLifebuoy = false,
-            playStoreInstalled = isPlayStoreInstalled(),
-            ruStoreInstalled = isRuStoreInstalled(),
-            showCollection = true
-        )
+        // Use the same tip jar functionality instead of purchase activity
+        onTipJarClick()
+    }
+
+    private fun onTipJarClick() {
+        // Check if app is installed from Play Store for security
+        if (isAppSideloaded()) {
+            // Show security warning dialog instead of QR code
+            AppSideloadedDialog(this) {
+                // User chose to close the dialog, no further action needed
+            }
+            return
+        }
+
+        // Additional check: ensure Play Store is installed (backup verification)
+        if (!isPlayStoreInstalled()) {
+            // Show error message if Play Store is not available
+            ConfirmationDialog(
+                activity = this,
+                message = getString(com.revaltronics.commons.R.string.play_store_not_found_tip_jar),
+                positive = com.revaltronics.commons.R.string.ok,
+                negative = 0
+            ) {
+                // User acknowledged, no further action needed
+            }
+            return
+        }
+
+        // Show a dialog with the Binance QR code for tipping with cryptocurrency
+        val dialogView = layoutInflater.inflate(com.revaltronics.commons.R.layout.dialog_binance_qr, null)
+        val dialog = AlertDialog.Builder(this)
+            .setTitle(getString(stringsR.string.tip_jar))
+            .setView(dialogView)
+            .setPositiveButton(com.revaltronics.commons.R.string.ok, null)
+            .create()
+            
+        // Set up the copy button functionality
+        dialogView.findViewById<Button>(com.revaltronics.commons.R.id.btn_copy_wallet).setOnClickListener {
+            val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            val binanceUsername = "User-c80c0"
+            val clip = ClipData.newPlainText("Binance Username", binanceUsername)
+            clipboard.setPrimaryClip(clip)
+            toast(com.revaltronics.commons.R.string.username_copied)
+        }
+        
+        dialog.show()
     }
 
     private fun launchAbout() {

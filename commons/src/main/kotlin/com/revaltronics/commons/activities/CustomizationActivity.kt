@@ -1,10 +1,15 @@
 package com.revaltronics.commons.activities
 
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.ContentValues
+import android.content.Context
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import androidx.appcompat.app.AlertDialog
 import androidx.core.content.res.ResourcesCompat
 import com.revaltronics.commons.R
 import com.revaltronics.commons.databinding.ActivityCustomizationBinding
@@ -930,13 +935,52 @@ class CustomizationActivity : BaseSimpleActivity() {
     }
 
     private fun launchPurchase() {
-        startPurchaseActivity(
-            stringsR.string.app_name_g,
-            getProductIdList(), getProductIdListRu(),
-            getSubscriptionIdList(), getSubscriptionIdListRu(),
-            getSubscriptionYearIdList(), getSubscriptionYearIdListRu(),
-            playStoreInstalled = playStoreInstalled(),
-            ruStoreInstalled = ruStoreInstalled())
+        // Use the same tip jar functionality instead of purchase activity
+        onTipJarClick()
+    }
+
+    private fun onTipJarClick() {
+        // Check if app is installed from Play Store for security
+        if (isAppSideloaded()) {
+            // Show security warning dialog instead of QR code
+            AppSideloadedDialog(this) {
+                // User chose to close the dialog, no further action needed
+            }
+            return
+        }
+
+        // Additional check: ensure Play Store is installed (backup verification)
+        if (!isPlayStoreInstalled()) {
+            // Show error message if Play Store is not available
+            ConfirmationDialog(
+                activity = this,
+                message = getString(R.string.play_store_not_found_tip_jar),
+                positive = R.string.ok,
+                negative = 0
+            ) {
+                // User acknowledged, no further action needed
+            }
+            return
+        }
+
+        // Show a dialog with the Binance QR code for tipping with cryptocurrency
+        val dialogView = layoutInflater.inflate(R.layout.dialog_binance_qr, null)
+        val dialog = AlertDialog.Builder(this)
+            .setTitle(getString(stringsR.string.tip_jar))
+            .setView(dialogView)
+            .setPositiveButton(R.string.ok, null)
+            .create()
+            
+        // Set up the copy button functionality
+        dialogView.findViewById<Button>(R.id.btn_copy_wallet).setOnClickListener {
+            val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            val binanceUsername = "User-c80c0"
+            val clip = ClipData.newPlainText("Binance Username", binanceUsername)
+            clipboard.setPrimaryClip(clip)
+            toast(R.string.username_copied)
+        }
+        
+        dialog.show()
     }
 
     private fun shakePurchase() {
